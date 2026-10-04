@@ -102,3 +102,27 @@ def test_les_alle_sortert(tmp_path):
     skriv_manus(tmp_path, gyldig_data(2))
     skriv_manus(tmp_path, gyldig_data(1))
     assert [e.uke for e in les_alle(tmp_path)] == [1, 2]
+
+
+def test_ukvotert_no_er_en_vanlig_nokkel(tmp_path):
+    gloser = "\n".join(f'  - {{ fr: "mot{i}", no: "ord{i}" }}' for i in range(10))
+    fraser = "\n".join(f'  - {{ fr: "phrase {i}", no: "frase {i}" }}' for i in range(6))
+    sti = tmp_path / "uke-01.yaml"
+    sti.write_text(
+        f"""uke: 1
+tittel: "T"
+beskrivelse: "B"
+gloser:
+{gloser}
+fraser:
+{fraser}
+codex_instruks: "C"
+segmenter:
+  - no: "Hei"
+  - fr: "Bonjour"
+""",
+        encoding="utf-8",
+    )
+    ep = les_episode(sti)
+    assert ep.gloser[0] == Ord(fr="mot0", no="ord0")
+    assert ep.segmenter[0] == Segment(type="no", tekst="Hei")

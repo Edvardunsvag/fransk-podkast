@@ -10,6 +10,19 @@ TOPP_FELT = {"uke", "tittel", "beskrivelse", "gloser", "fraser", "codex_instruks
 SEGMENT_FELT = {"no", "fr", "pause", "fart", "stemme"}
 
 
+class _Laster(yaml.SafeLoader):
+    """SafeLoader der bare true/false er boolske verdier, så nøkkelen `no` forblir tekst."""
+
+
+_Laster.yaml_implicit_resolvers = {
+    tegn: [(tag, regex) for tag, regex in resolvere if tag != "tag:yaml.org,2002:bool"]
+    for tegn, resolvere in yaml.SafeLoader.yaml_implicit_resolvers.items()
+}
+_Laster.add_implicit_resolver(
+    "tag:yaml.org,2002:bool", re.compile(r"^(?:true|True|TRUE|false|False|FALSE)$"), list("tTfF")
+)
+
+
 class ManusFeil(Exception):
     pass
 
@@ -48,7 +61,7 @@ def les_episode(sti: Path) -> Episode:
     if not sti.exists():
         raise ManusFeil(f"Finner ikke manus: {sti}")
     try:
-        data = yaml.safe_load(sti.read_text(encoding="utf-8"))
+        data = yaml.load(sti.read_text(encoding="utf-8"), Loader=_Laster)
     except yaml.YAMLError as e:
         raise ManusFeil(f"{sti.name}: ugyldig YAML: {e}") from e
     return _valider(data, sti.name)
