@@ -10,6 +10,43 @@
     <itunes:category text="Education" />
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Uke 02: Er det første gang i Norge?</title>
+      <description>Spørre turister om de har vært i Norge før, hvor lenge de blir, og om de liker seg. Med ord-for-ord-analyse og verbet être.
+
+Gloser:
+- la première fois: første gang
+- combien de temps: hvor lenge
+- depuis: siden, i (om tid)
+- rester: å bli (værende)
+- une semaine: en uke
+- jusqu'à: til, frem til
+- déjà: allerede
+- ça vous plaît: liker du/dere det
+- cher: dyr
+- magnifique: vakker, fantastisk
+
+Fraser:
+- C'est la première fois que vous venez en Norvège ?: Er det første gang dere er i Norge?
+- Vous êtes ici depuis combien de temps ?: Hvor lenge har dere vært her?
+- Nous sommes ici depuis une semaine.: Vi har vært her i en uke.
+- Vous restez jusqu'à quand ?: Hvor lenge blir dere?
+- Ça vous plaît, la Norvège ?: Liker dere Norge?
+- Oui, c'est magnifique, mais c'est très cher !: Ja, det er fantastisk, men veldig dyrt!
+- Vous êtes déjà allés à Bergen ?: Har dere allerede vært i Bergen?
+
+Helgesamtale med Codex. Lim inn dette:
+
+Du er Sophie, en fransk turist fra Paris som sitter på en kafé på Aker Brygge i Oslo med et kart. Du har vært i Norge i tre dager og blir til søndag. Jeg er nordmann og lærer fransk, og jeg er på uke 2.
+Snakk bare fransk, sakte og med korte, enkle setninger. Hold deg så langt det går til disse ordene og frasene: la première fois, combien de temps, depuis, rester, une semaine, jusqu'à, déjà, ça vous plaît, cher, magnifique, C'est la première fois que vous venez en Norvège ?, Vous êtes ici depuis combien de temps ?, Vous restez jusqu'à quand ?, Vous êtes déjà allés à Bergen ?, og fra uke 1: bonjour, je m'appelle, Vous venez d'où ?, Je viens de…, J'habite à…, Je parle un peu français, Vous pouvez parler plus lentement ?
+Etter hvert svar fra meg: hvis jeg sa noe feil, gi en kort rettelse på norsk i én setning, og fortsett så samtalen på fransk.
+Du starter samtalen. Etter rundt 10 minutter avslutter du og sier på norsk hvilke tre ting jeg bør øve mer på.</description>
+      <enclosure url="https://edvardunsvag.github.io/fransk-podkast/lyd/uke-02.mp3" length="11328764" type="audio/mpeg" />
+      <guid isPermaLink="false">https://edvardunsvag.github.io/fransk-podkast/lyd/uke-02.mp3</guid>
+      <pubDate>Sun, 04 Oct 2026 19:37:51 +0200</pubDate>
+      <itunes:duration>1416</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+    </item>
+    <item>
       <title>Uke 01: Hei, hvor kommer du fra?</title>
       <description>Hilse, presentere seg, spørre hvor folk kommer fra og be om at de snakker saktere.
 

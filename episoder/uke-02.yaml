@@ -1,0 +1,536 @@
+uke: 2
+tittel: "Er det første gang i Norge?"
+beskrivelse: "Spørre turister om de har vært i Norge før, hvor lenge de blir, og om de liker seg. Med ord-for-ord-analyse og verbet être."
+gloser:
+  - { fr: "la première fois", no: "første gang" }
+  - { fr: "combien de temps", no: "hvor lenge" }
+  - { fr: "depuis", no: "siden, i (om tid)" }
+  - { fr: "rester", no: "å bli (værende)" }
+  - { fr: "une semaine", no: "en uke" }
+  - { fr: "jusqu'à", no: "til, frem til" }
+  - { fr: "déjà", no: "allerede" }
+  - { fr: "ça vous plaît", no: "liker du/dere det" }
+  - { fr: "cher", no: "dyr" }
+  - { fr: "magnifique", no: "vakker, fantastisk" }
+fraser:
+  - { fr: "C'est la première fois que vous venez en Norvège ?", no: "Er det første gang dere er i Norge?" }
+  - { fr: "Vous êtes ici depuis combien de temps ?", no: "Hvor lenge har dere vært her?" }
+  - { fr: "Nous sommes ici depuis une semaine.", no: "Vi har vært her i en uke." }
+  - { fr: "Vous restez jusqu'à quand ?", no: "Hvor lenge blir dere?" }
+  - { fr: "Ça vous plaît, la Norvège ?", no: "Liker dere Norge?" }
+  - { fr: "Oui, c'est magnifique, mais c'est très cher !", no: "Ja, det er fantastisk, men veldig dyrt!" }
+  - { fr: "Vous êtes déjà allés à Bergen ?", no: "Har dere allerede vært i Bergen?" }
+andre_ord:
+  - { fr: "être", no: "å være (je suis, vous êtes, nous sommes, c'est)" }
+  - { fr: "venir", no: "å komme (je viens, vous venez)" }
+  - { fr: "aller", no: "å gå, å dra (vous êtes allés = dere har dratt)" }
+  - { fr: "habiter", no: "å bo" }
+  - { fr: "prendre", no: "å ta" }
+  - { fr: "partir", no: "å dra, å reise" }
+  - { fr: "plaire", no: "å falle i smak" }
+  - { fr: "ça", no: "det" }
+  - { fr: "nous", no: "vi" }
+  - { fr: "que", no: "at, som" }
+  - { fr: "en", no: "i, til (foran land)" }
+  - { fr: "combien", no: "hvor mye, hvor mange" }
+  - { fr: "le temps", no: "tid, vær" }
+  - { fr: "quand", no: "når" }
+  - { fr: "mais", no: "men" }
+  - { fr: "dix ans", no: "ti år" }
+  - { fr: "trois jours", no: "tre dager" }
+  - { fr: "dimanche", no: "søndag" }
+  - { fr: "la vue", no: "utsikten" }
+  - { fr: "vrai", no: "sant" }
+  - { fr: "pas encore", no: "ikke ennå" }
+  - { fr: "loin", no: "langt unna" }
+  - { fr: "sept heures", no: "sju timer" }
+  - { fr: "en train", no: "med tog" }
+  - { fr: "bon voyage", no: "god tur" }
+codex_instruks: |
+  Du er Sophie, en fransk turist fra Paris som sitter på en kafé på Aker Brygge i Oslo med et kart. Du har vært i Norge i tre dager og blir til søndag. Jeg er nordmann og lærer fransk, og jeg er på uke 2.
+  Snakk bare fransk, sakte og med korte, enkle setninger. Hold deg så langt det går til disse ordene og frasene: la première fois, combien de temps, depuis, rester, une semaine, jusqu'à, déjà, ça vous plaît, cher, magnifique, C'est la première fois que vous venez en Norvège ?, Vous êtes ici depuis combien de temps ?, Vous restez jusqu'à quand ?, Vous êtes déjà allés à Bergen ?, og fra uke 1: bonjour, je m'appelle, Vous venez d'où ?, Je viens de…, J'habite à…, Je parle un peu français, Vous pouvez parler plus lentement ?
+  Etter hvert svar fra meg: hvis jeg sa noe feil, gi en kort rettelse på norsk i én setning, og fortsett så samtalen på fransk.
+  Du starter samtalen. Etter rundt 10 minutter avslutter du og sier på norsk hvilke tre ting jeg bør øve mer på.
+segmenter:
+  # 1. Intro
+  - no: "Velkommen til uke to av Fransk på løpetur."
+  - no: "I dag lærer du å spørre turister om det er første gang de er i Norge, hvor lenge de har vært her, hvor lenge de blir, og om de liker seg. Og du lærer det viktigste verbet av alle: å være."
+  - no: "Nytt fra denne uka: etter hver setning går vi kort gjennom ordene, så du skjønner hvordan setningen er bygget."
+  - pause: 2
+
+  # 2. Repetisjon
+  - no: "Først en rask repetisjon fra forrige uke. Du hører det norske ordet, og så det franske."
+  - no: "Hei."
+  - pause: 3
+  - fr: "bonjour"
+  - pause: 1
+  - no: "Takk."
+  - pause: 3
+  - fr: "merci"
+  - pause: 1
+  - no: "Ja."
+  - pause: 3
+  - fr: "oui"
+  - pause: 1
+  - no: "Nei."
+  - pause: 3
+  - fr: "non"
+  - pause: 1
+  - no: "Jeg heter."
+  - pause: 3
+  - fr: "je m'appelle"
+  - pause: 1
+  - no: "Fransk."
+  - pause: 3
+  - fr: "français"
+  - pause: 1
+  - no: "Norge."
+  - pause: 3
+  - fr: "la Norvège"
+  - pause: 1
+  - no: "Hvorfra."
+  - pause: 3
+  - fr: "d'où"
+  - pause: 2
+
+  # 3. Ukas 10 gloser
+  - no: "Så ukas ti ord. Ord nummer én."
+  - fr: "la première fois"
+  - pause: 2
+  - fr: "la première fois"
+  - pause: 2
+  - no: "Det betyr første gang."
+  - fr: "C'est la première fois."
+  - pause: 3
+  - no: "Det er første gang. Det lille ordet i starten,"
+  - fr: "c'est"
+  - no: "betyr det er. Det kommer av verbet"
+  - fr: "être"
+  - no: "som betyr å være. Det er uregelrett, så la oss ta de viktigste formene med en gang. Jeg er:"
+  - fr: "je suis"
+  - pause: 2
+  - no: "Du er, eller dere er:"
+  - fr: "vous êtes"
+  - pause: 2
+  - no: "Vi er:"
+  - fr: "nous sommes"
+  - pause: 2
+  - no: "Og det er:"
+  - fr: "c'est"
+  - pause: 2
+
+  - no: "Ord nummer to."
+  - fr: "combien de temps"
+  - pause: 2
+  - fr: "combien de temps"
+  - pause: 2
+  - no: "Det betyr hvor lenge. Ordrett står det hvor mye tid."
+  - fr: "combien"
+  - no: "betyr hvor mye eller hvor mange, og"
+  - fr: "le temps"
+  - no: "betyr tid. Det samme ordet betyr også vær."
+  - fr: "Ça prend combien de temps ?"
+  - pause: 3
+  - no: "Hvor lang tid tar det?"
+  - fr: "ça"
+  - no: "betyr det, og"
+  - fr: "prend"
+  - no: "kommer av"
+  - fr: "prendre"
+  - no: "som betyr å ta."
+  - pause: 1
+
+  - no: "Ord nummer tre."
+  - fr: "depuis"
+  - pause: 2
+  - fr: "depuis"
+  - pause: 2
+  - no: "Det betyr siden, eller i, når du snakker om tid."
+  - fr: "J'habite à Oslo depuis dix ans."
+  - pause: 3
+  - no: "Jeg har bodd i Oslo i ti år. Legg merke til at norsk sier har bodd, mens fransk bruker nåtid sammen med dette ordet. Ordrett: jeg bor i Oslo siden ti år."
+  - fr: "j'habite"
+  - no: "kommer av"
+  - fr: "habiter"
+  - no: "å bo. Og"
+  - fr: "dix ans"
+  - no: "betyr ti år."
+  - pause: 1
+
+  - no: "Ord nummer fire."
+  - fr: "rester"
+  - pause: 2
+  - fr: "rester"
+  - pause: 2
+  - no: "Det betyr å bli, i betydningen bli værende et sted. Ikke å bli noe."
+  - fr: "Vous restez combien de temps ?"
+  - pause: 3
+  - no: "Hvor lenge blir dere?"
+  - fr: "vous restez"
+  - no: "er vous-formen. De fleste franske verb ender på e r, og vous-formen ender da på e z. Det samme gjelder"
+  - fr: "vous habitez"
+  - no: "og"
+  - fr: "vous parlez"
+  - no: "dere bor, og dere snakker."
+  - pause: 1
+
+  - no: "Ord nummer fem."
+  - fr: "une semaine"
+  - pause: 2
+  - fr: "une semaine"
+  - pause: 2
+  - no: "Det betyr en uke."
+  - fr: "Je reste une semaine."
+  - pause: 3
+  - no: "Jeg blir en uke. Jeg-formen av verb som ender på e r, ender på bare e:"
+  - fr: "je reste, j'habite, je parle"
+  - pause: 2
+
+  - no: "Ord nummer seks."
+  - fr: "jusqu'à"
+  - pause: 2
+  - fr: "jusqu'à"
+  - pause: 2
+  - no: "Det betyr til, eller frem til."
+  - fr: "Je reste jusqu'à dimanche."
+  - pause: 3
+  - no: "Jeg blir til søndag."
+  - fr: "dimanche"
+  - no: "betyr søndag."
+  - pause: 1
+
+  - no: "Ord nummer sju."
+  - fr: "déjà"
+  - pause: 2
+  - fr: "déjà"
+  - pause: 2
+  - no: "Det betyr allerede."
+  - fr: "Vous partez déjà ?"
+  - pause: 3
+  - no: "Drar dere allerede?"
+  - fr: "vous partez"
+  - no: "kommer av"
+  - fr: "partir"
+  - no: "å dra, eller å reise. Det ender på i r, men vous-formen ender likevel på e z."
+  - pause: 1
+
+  - no: "Ord nummer åtte."
+  - fr: "ça vous plaît"
+  - pause: 2
+  - fr: "ça vous plaît"
+  - pause: 2
+  - no: "Det betyr liker du det, eller liker dere det. Ordrett: faller det i smak for dere."
+  - fr: "plaît"
+  - no: "kommer av"
+  - fr: "plaire"
+  - no: "å falle i smak. Du kjenner det allerede fra"
+  - fr: "s'il vous plaît"
+  - no: "som ordrett betyr hvis det faller i smak for dere."
+  - fr: "Ça vous plaît, Oslo ?"
+  - pause: 3
+  - no: "Liker dere Oslo?"
+  - pause: 1
+
+  - no: "Ord nummer ni."
+  - fr: "cher"
+  - pause: 2
+  - fr: "cher"
+  - pause: 2
+  - no: "Det betyr dyr. Et ord du kommer til å trenge med turister i Norge."
+  - fr: "C'est très cher ici."
+  - pause: 3
+  - no: "Det er veldig dyrt her. Alle de andre ordene kjenner du fra før."
+  - pause: 1
+
+  - no: "Ord nummer ti."
+  - fr: "magnifique"
+  - pause: 2
+  - fr: "magnifique"
+  - pause: 2
+  - no: "Det betyr vakker, eller fantastisk."
+  - fr: "La vue est magnifique."
+  - pause: 3
+  - no: "Utsikten er fantastisk."
+  - fr: "la vue"
+  - no: "betyr utsikten, og"
+  - fr: "est"
+  - no: "er formen av å være som brukes om han, hun eller den. Utsikten er."
+  - pause: 2
+
+  - no: "Det var ukas ti ord. En gang til, bare på fransk."
+  - fr: "la première fois"
+  - pause: 2
+  - fr: "combien de temps"
+  - pause: 2
+  - fr: "depuis"
+  - pause: 2
+  - fr: "rester"
+  - pause: 2
+  - fr: "une semaine"
+  - pause: 2
+  - fr: "jusqu'à"
+  - pause: 2
+  - fr: "déjà"
+  - pause: 2
+  - fr: "ça vous plaît"
+  - pause: 2
+  - fr: "cher"
+  - pause: 2
+  - fr: "magnifique"
+  - pause: 2
+
+  # 4. Ukas fraser
+  - no: "Nå setter vi ordene sammen til setninger. Lange setninger bygger vi bakfra."
+  - pause: 1
+
+  - no: "Første setning. Er det første gang dere er i Norge?"
+  - fr: "en Norvège ?"
+  - pause: 2
+  - fr: "vous venez en Norvège ?"
+  - pause: 2
+  - fr: "la première fois que vous venez en Norvège ?"
+  - pause: 2
+  - fr: "C'est la première fois que vous venez en Norvège ?"
+  - pause: 3
+  - fr: "que"
+  - no: "betyr her at, eller som. Ordrett: er det første gang at dere kommer til Norge?"
+  - fr: "vous venez"
+  - no: "kommer av"
+  - fr: "venir"
+  - no: "å komme. Du kjenner jeg-formen fra forrige uke:"
+  - fr: "je viens"
+  - no: "Og"
+  - fr: "en"
+  - no: "foran et land betyr i eller til."
+  - fr: "C'est la première fois que vous venez en Norvège ?"
+  - pause: 3
+
+  - no: "Andre setning. Hvor lenge har dere vært her?"
+  - fr: "depuis combien de temps ?"
+  - pause: 2
+  - fr: "Vous êtes ici depuis combien de temps ?"
+  - pause: 3
+  - no: "Ordrett: dere er her siden hvor lang tid. Igjen nåtid, der norsk sier har vært."
+  - fr: "Vous êtes ici depuis combien de temps ?"
+  - pause: 3
+
+  - no: "Tredje setning er et svar du kan få."
+  - fr: "Nous sommes ici depuis une semaine."
+    stemme: b
+  - pause: 3
+  - no: "Vi har vært her i en uke."
+  - fr: "nous sommes"
+  - no: "er vi-formen av å være: vi er."
+  - pause: 1
+
+  - no: "Fjerde setning. Hvor lenge blir dere?"
+  - fr: "jusqu'à quand ?"
+  - pause: 2
+  - fr: "Vous restez jusqu'à quand ?"
+  - pause: 3
+  - fr: "quand"
+  - no: "betyr når. Ordrett: dere blir til når?"
+  - fr: "Vous restez jusqu'à quand ?"
+  - pause: 3
+
+  - no: "Femte setning. Liker dere Norge?"
+  - fr: "Ça vous plaît, la Norvège ?"
+  - pause: 3
+  - no: "Franskmenn setter ofte det de snakker om til slutt, etter et komma. Ordrett: faller det i smak for dere, Norge?"
+  - fr: "Ça vous plaît, la Norvège ?"
+  - pause: 3
+
+  - no: "Sjette setning er et svar du sikkert kommer til å høre."
+  - fr: "Oui, c'est magnifique, mais c'est très cher !"
+    stemme: b
+  - pause: 3
+  - no: "Ja, det er fantastisk, men det er veldig dyrt."
+  - fr: "mais"
+  - no: "betyr men."
+  - pause: 1
+
+  - no: "Sjuende og siste setning. Har dere allerede vært i Bergen?"
+  - fr: "à Bergen ?"
+  - pause: 2
+  - fr: "déjà allés à Bergen ?"
+  - pause: 2
+  - fr: "Vous êtes déjà allés à Bergen ?"
+  - pause: 3
+  - no: "Dette er fortid. Verbet er"
+  - fr: "aller"
+  - no: "som betyr å gå eller å dra. Noen verb, særlig verb for bevegelse, bruker være i stedet for ha i fortid. Ordrett står det: dere er allerede dratt til Bergen?"
+  - fr: "vous êtes allés"
+  - no: "betyr altså dere har dratt. Endelsen på slutten skrives med s fordi det er flere personer, men det høres ikke."
+  - fr: "Vous êtes déjà allés à Bergen ?"
+  - pause: 3
+
+  - no: "Nå tester vi setningene. Du hører den norske setningen. Prøv å si den på fransk før svaret kommer."
+  - no: "Er det første gang dere er i Norge?"
+  - pause: 4
+  - fr: "C'est la première fois que vous venez en Norvège ?"
+  - pause: 2
+  - no: "Hvor lenge har dere vært her?"
+  - pause: 4
+  - fr: "Vous êtes ici depuis combien de temps ?"
+  - pause: 2
+  - no: "Vi har vært her i en uke."
+  - pause: 4
+  - fr: "Nous sommes ici depuis une semaine."
+  - pause: 2
+  - no: "Hvor lenge blir dere?"
+  - pause: 4
+  - fr: "Vous restez jusqu'à quand ?"
+  - pause: 2
+  - no: "Liker dere Norge?"
+  - pause: 4
+  - fr: "Ça vous plaît, la Norvège ?"
+  - pause: 2
+  - no: "Ja, det er fantastisk, men veldig dyrt."
+  - pause: 4
+  - fr: "Oui, c'est magnifique, mais c'est très cher !"
+  - pause: 2
+  - no: "Har dere allerede vært i Bergen?"
+  - pause: 4
+  - fr: "Vous êtes déjà allés à Bergen ?"
+  - pause: 2
+
+  # 5. Dialog
+  - no: "Nå kommer en samtale. Edvard sitter på en kafé på Aker Brygge. Ved bordet ved siden av sitter en kvinne med et kart og snakker fransk. Først sakte, med forklaringer på nye ord."
+  - pause: 1
+  - fr: "Bonjour ! Vous êtes française ?"
+    stemme: b
+  - fr: "Oui, je viens de Paris."
+  - fr: "C'est la première fois que vous venez en Norvège ?"
+    stemme: b
+  - fr: "Oui, c'est la première fois."
+  - fr: "Vous êtes ici depuis combien de temps ?"
+    stemme: b
+  - fr: "Depuis trois jours. Nous restons jusqu'à dimanche."
+  - fr: "trois jours"
+  - no: "betyr tre dager, og"
+  - fr: "nous restons"
+  - no: "er vi-formen av rester. Vi-formen ender på o n s."
+  - fr: "Ça vous plaît, la Norvège ?"
+    stemme: b
+  - fr: "Oui, c'est magnifique ! Mais c'est très cher."
+  - fr: "Oui, c'est vrai. Vous êtes déjà allés à Bergen ?"
+    stemme: b
+  - fr: "vrai"
+  - no: "betyr sant. Ja, det er sant."
+  - fr: "Non, pas encore. C'est loin ?"
+  - fr: "pas encore"
+  - no: "betyr ikke ennå, og"
+  - fr: "loin"
+  - no: "betyr langt unna. Er det langt?"
+  - fr: "Sept heures en train. Mais c'est magnifique."
+    stemme: b
+  - fr: "sept heures"
+  - no: "betyr sju timer, og"
+  - fr: "en train"
+  - no: "betyr med tog."
+  - fr: "Merci ! Bonne journée !"
+  - fr: "Bonne journée, et bon voyage !"
+    stemme: b
+  - fr: "bon voyage"
+  - no: "betyr god tur. Fint å avslutte med til en turist."
+  - pause: 2
+
+  - no: "Nå hele samtalen en gang til, i nesten normalt tempo, uten avbrudd."
+  - pause: 1
+  - fr: "Bonjour ! Vous êtes française ?"
+    stemme: b
+    fart: normal
+  - fr: "Oui, je viens de Paris."
+    fart: normal
+  - fr: "C'est la première fois que vous venez en Norvège ?"
+    stemme: b
+    fart: normal
+  - fr: "Oui, c'est la première fois."
+    fart: normal
+  - fr: "Vous êtes ici depuis combien de temps ?"
+    stemme: b
+    fart: normal
+  - fr: "Depuis trois jours. Nous restons jusqu'à dimanche."
+    fart: normal
+  - fr: "Ça vous plaît, la Norvège ?"
+    stemme: b
+    fart: normal
+  - fr: "Oui, c'est magnifique ! Mais c'est très cher."
+    fart: normal
+  - fr: "Oui, c'est vrai. Vous êtes déjà allés à Bergen ?"
+    stemme: b
+    fart: normal
+  - fr: "Non, pas encore. C'est loin ?"
+    fart: normal
+  - fr: "Sept heures en train. Mais c'est magnifique."
+    stemme: b
+    fart: normal
+  - fr: "Merci ! Bonne journée !"
+    fart: normal
+  - fr: "Bonne journée, et bon voyage !"
+    stemme: b
+    fart: normal
+  - pause: 2
+
+  - no: "Nå er det din tur. Du er Edvard. Du hører kvinnens replikker og får en pause til å svare. Start selv med å spørre om hun er fransk."
+  - pause: 4
+  - fr: "Oui, je viens de Paris."
+  - pause: 5
+  - fr: "Oui, c'est la première fois."
+  - pause: 5
+  - fr: "Depuis trois jours. Nous restons jusqu'à dimanche."
+  - pause: 5
+  - fr: "Oui, c'est magnifique ! Mais c'est très cher."
+  - pause: 5
+  - fr: "Non, pas encore. C'est loin ?"
+  - pause: 5
+  - fr: "Merci ! Bonne journée !"
+  - pause: 4
+  - no: "Bra. Det er denne samtalen du skal ha med Codex i helgen."
+  - pause: 2
+
+  # 6. Avslutning
+  - no: "Til slutt ukas ti ord. Du hører det norske. Prøv å komme på det franske før du hører det."
+  - no: "Første gang."
+  - pause: 3
+  - fr: "la première fois"
+  - pause: 1
+  - no: "Hvor lenge."
+  - pause: 3
+  - fr: "combien de temps"
+  - pause: 1
+  - no: "Siden, om tid."
+  - pause: 3
+  - fr: "depuis"
+  - pause: 1
+  - no: "Å bli værende."
+  - pause: 3
+  - fr: "rester"
+  - pause: 1
+  - no: "En uke."
+  - pause: 3
+  - fr: "une semaine"
+  - pause: 1
+  - no: "Frem til."
+  - pause: 3
+  - fr: "jusqu'à"
+  - pause: 1
+  - no: "Allerede."
+  - pause: 3
+  - fr: "déjà"
+  - pause: 1
+  - no: "Liker dere det?"
+  - pause: 3
+  - fr: "ça vous plaît"
+  - pause: 1
+  - no: "Dyr."
+  - pause: 3
+  - fr: "cher"
+  - pause: 1
+  - no: "Fantastisk."
+  - pause: 3
+  - fr: "magnifique"
+  - pause: 2
+  - no: "Det var uke to. I helgen sitter du på en kafé på Aker Brygge med Codex, som er en fransk turist fra Paris. Instruksen står i episodebeskrivelsen. Spør hvor lenge hun har vært her, hvor lenge hun blir, og om hun liker Norge."
+  - no: "Hør episoden en gang til på neste løpetur. God tur videre."
+  - fr: "À la semaine prochaine !"
