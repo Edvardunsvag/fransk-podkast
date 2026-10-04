@@ -4,7 +4,7 @@ Kryss av når episoden er publisert. Juster temaene underveis.
 
 ## Turister i Norge
 
-- [ ] Uke 1: Hei, hvor kommer du fra? Hilse, presentere seg, snakke litt fransk, be om saktere tale
+- [x] Uke 1: Hei, hvor kommer du fra? Hilse, presentere seg, snakke litt fransk, be om saktere tale
 - [ ] Uke 2: Er det første gang i Norge? Hvor lenge, liker dere dere
 - [ ] Uke 3: Hva jeg heter og hva jeg gjør. Jobb, bosted, alder
 - [ ] Uke 4: Tall 1–100 og tid. Hvor mange dager, klokka
