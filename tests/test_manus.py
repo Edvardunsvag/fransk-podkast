@@ -126,3 +126,17 @@ segmenter:
     ep = les_episode(sti)
     assert ep.gloser[0] == Ord(fr="mot0", no="ord0")
     assert ep.segmenter[0] == Segment(type="no", tekst="Hei")
+
+
+def test_andre_ord_er_valgfritt(tmp_path):
+    assert les_episode(skriv_manus(tmp_path, gyldig_data(1))).andre_ord == []
+
+
+def test_andre_ord_leses(tmp_path):
+    data = gyldig_data(1)
+    data["andre_ord"] = [{"fr": "venir", "no": "å komme"}]
+    assert les_episode(skriv_manus(tmp_path, data)).andre_ord == [Ord("venir", "å komme")]
+
+
+def test_andre_ord_valideres(tmp_path):
+    _feil(tmp_path, lambda d: d.update(andre_ord=[{"fr": "venir"}]), "andre_ord nr. 1")

@@ -1,12 +1,13 @@
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 import yaml
 
 TOPP_FELT = {"uke", "tittel", "beskrivelse", "gloser", "fraser", "codex_instruks", "segmenter"}
+VALGFRIE_FELT = {"andre_ord"}
 SEGMENT_FELT = {"no", "fr", "pause", "fart", "stemme"}
 
 
@@ -51,6 +52,7 @@ class Episode:
     fraser: list[Ord]
     codex_instruks: str
     segmenter: list[Segment]
+    andre_ord: list[Ord] = field(default_factory=list)
 
 
 def manus_sti(mappe: Path, uke: int) -> Path:
@@ -81,7 +83,7 @@ def _valider(data, navn: str) -> Episode:
     mangler = TOPP_FELT - data.keys()
     if mangler:
         feil(f"mangler felt: {', '.join(sorted(mangler))}")
-    ukjente = data.keys() - TOPP_FELT
+    ukjente = data.keys() - TOPP_FELT - VALGFRIE_FELT
     if ukjente:
         feil(f"ukjente felt: {', '.join(sorted(ukjente))}")
 
@@ -100,6 +102,8 @@ def _valider(data, navn: str) -> Episode:
     if not 6 <= len(fraser) <= 8:
         feil(f"fraser må ha mellom 6 og 8, har {len(fraser)}")
 
+    andre_ord = _ordliste(data.get("andre_ord", []), "andre_ord", feil)
+
     if not isinstance(data["segmenter"], list) or not data["segmenter"]:
         feil("segmenter kan ikke være tom")
     segmenter = [_segment(s, nr, feil) for nr, s in enumerate(data["segmenter"], 1)]
@@ -112,6 +116,7 @@ def _valider(data, navn: str) -> Episode:
         fraser=fraser,
         codex_instruks=data["codex_instruks"].strip(),
         segmenter=segmenter,
+        andre_ord=andre_ord,
     )
 
 

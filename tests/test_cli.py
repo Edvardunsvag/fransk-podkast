@@ -86,3 +86,13 @@ def test_git_endringer_finner_utsporede_filer(repo):
     (repo / "docs").mkdir()
     (repo / "docs" / "a.txt").write_text("a")
     assert cli.git_endringer(repo) == ["docs/a.txt"]
+
+
+def test_kjente_skriver_ord(repo, capsys):
+    data = gyldig_data(1)
+    data["andre_ord"] = [{"fr": "venir", "no": "å komme"}]
+    skriv_manus(repo / "episoder", data)
+    assert cli.main(["kjente", "2"]) == 0
+    ut = capsys.readouterr().out
+    assert "venir – å komme (uke 1)" in ut
+    assert "mot1-0 – ord1-0 (uke 1)" in ut

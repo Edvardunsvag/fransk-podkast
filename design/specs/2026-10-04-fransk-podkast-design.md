@@ -31,7 +31,7 @@ Mål: 20–25 minutter. Norsk stemme forklarer, fransk stemme sier alt på frans
 |---|---|---|
 | 1. Intro | 0,5 min | Uke, tema og hva lytteren skal klare etter episoden |
 | 2. Repetisjon | 3 min | Rundt 8 gloser fra tidligere uker. Norsk ord, 3 sekunders pause, fransk ord. |
-| 3. Ukas 10 gloser | 7 min | Fransk to ganger sakte, betydning, kort uttaletips, eksempelsetning |
+| 3. Ukas 10 gloser | 7 min | Fransk to ganger sakte, betydning, eksempelsetning med ord-for-ord-analyse |
 | 4. Ukas fraser | 6 min | 6–8 fraser som bruker glosene. Lange fraser bygges bakfra (backchaining). |
 | 5. Dialog | 4 min | Kort samtale mellom to franske stemmer. Først sakte med norske forklaringer innimellom, så i nesten normalt tempo uten avbrudd. |
 | 6. Avslutning | 2 min | Alle 10 glosene i norsk–pause–fransk-format, og helgeoppdraget |
@@ -45,6 +45,10 @@ Regler:
 ### Repetisjonsregel
 
 Repetisjonsdelen i uke N henter gloser fra uke N−1, N−2, N−4 og N−8 (de som finnes), til sammen rundt 8. Ved flere kandidater enn plass velges jevnt fra hver av ukene. Skriptet foreslår glosene, og manusforfatteren (Claude) bruker forslaget.
+
+### Ord-for-ord-analyse (fra uke 2)
+
+Hver ny fransk setning følges av en kort norsk analyse: verb med grunnform og person, og betydningen av ord brukeren ikke har lært før (alt som ikke står i `fransk kjente N`). Uttale nevnes bare når den er overraskende. Ord som forklares, legges i `andre_ord`.
 
 ## Pensum
 
@@ -95,6 +99,8 @@ gloser:
 fraser:
   - { fr: "Vous venez d'où ?", no: "Hvor kommer dere fra?" }
   # 6–8
+andre_ord:                # valgfri: ord forklart i analysene, utenom ukas gloser
+  - { fr: "venir", no: "å komme" }
 codex_instruks: |
   Teksten Edvard limer inn i helgesamtalen med Codex.
 segmenter:
@@ -148,6 +154,7 @@ Lager `docs/feed.xml` (RSS 2.0 med iTunes-tagger) fra alle manus med en tilhøre
 | `uv run fransk lag N` | Validerer manus og lager `docs/lyd/uke-NN.mp3` |
 | `uv run fransk publiser N` | Lager MP3 om den mangler, oppdaterer feeden, committer og pusher |
 | `uv run fransk repetisjon N` | Skriver ut foreslåtte repetisjonsgloser for uke N |
+| `uv run fransk kjente N` | Skriver ut alle gloser og `andre_ord` fra uke 1 til N−1 |
 | `uv run fransk sjekk N` | Validerer bare manuset |
 
 ## Codex-instruks
