@@ -1,0 +1,419 @@
+uke: 1
+tittel: "Hei, hvor kommer du fra?"
+beskrivelse: "Hilse, presentere seg, spørre hvor folk kommer fra og be om at de snakker saktere."
+gloser:
+  - { fr: "bonjour", no: "hei, god dag" }
+  - { fr: "merci", no: "takk" }
+  - { fr: "oui", no: "ja" }
+  - { fr: "non", no: "nei" }
+  - { fr: "je m'appelle", no: "jeg heter" }
+  - { fr: "français", no: "fransk" }
+  - { fr: "la Norvège", no: "Norge" }
+  - { fr: "d'où", no: "hvorfra" }
+  - { fr: "un peu", no: "litt" }
+  - { fr: "lentement", no: "sakte" }
+fraser:
+  - { fr: "Bonjour, vous êtes français ?", no: "Hei, er dere franske?" }
+  - { fr: "Je m'appelle Edvard.", no: "Jeg heter Edvard." }
+  - { fr: "Enchanté !", no: "Hyggelig å hilse på deg!" }
+  - { fr: "Vous venez d'où ?", no: "Hvor kommer dere fra?" }
+  - { fr: "Je viens de Norvège, j'habite à Oslo.", no: "Jeg kommer fra Norge, jeg bor i Oslo." }
+  - { fr: "Je parle un peu français.", no: "Jeg snakker litt fransk." }
+  - { fr: "Vous pouvez parler plus lentement, s'il vous plaît ?", no: "Kan du snakke litt saktere?" }
+codex_instruks: |
+  Du er Claire, en fransk turist fra Lyon som står på taket av Operaen i Oslo og ser på utsikten. Jeg er nordmann og lærer fransk. Jeg har litt skolefransk og er på uke 1.
+  Snakk bare fransk, sakte og med korte, enkle setninger. Hold deg så langt det går til disse ordene og frasene: bonjour, merci, oui, non, je m'appelle, français, la Norvège, d'où, un peu, lentement, Vous êtes français ?, Enchanté !, Vous venez d'où ?, Je viens de…, J'habite à…, Je parle un peu français, Vous pouvez parler plus lentement, s'il vous plaît ?
+  Etter hvert svar fra meg: hvis jeg sa noe feil, gi en kort rettelse på norsk i én setning, og fortsett så samtalen på fransk.
+  Du starter samtalen. Etter rundt 10 minutter avslutter du og sier på norsk hvilke tre ting jeg bør øve mer på.
+segmenter:
+  # 1. Intro
+  - no: "Velkommen til Fransk på løpetur. Dette er uke én."
+  - no: "I dag lærer du å hilse på en fransk turist, si hva du heter, spørre hvor de kommer fra, og be dem snakke litt saktere."
+  - no: "Du trenger ikke svare høyt. Bare hør, og mumle med hvis du orker. Da begynner vi."
+  - pause: 2
+
+  # 3. Ukas 10 gloser
+  - no: "Først ukas ti ord. Ord nummer én."
+  - fr: "bonjour"
+  - pause: 2
+  - fr: "bonjour"
+  - pause: 2
+  - no: "Det betyr hei, eller god dag. Det er den vanligste hilsenen i Frankrike, og du kan bruke den til alle, hele dagen."
+  - no: "R-en på slutten sitter bak i halsen, nesten som når du gurgler."
+  - fr: "Bonjour, madame."
+  - pause: 3
+  - no: "God dag, frue."
+  - fr: "Bonjour, monsieur."
+  - pause: 3
+  - no: "God dag, til en mann."
+  - pause: 1
+
+  - no: "Ord nummer to."
+  - fr: "merci"
+  - pause: 2
+  - fr: "merci"
+  - pause: 2
+  - no: "Det betyr takk. E-en uttales nesten som en æ, og trykket ligger på slutten av ordet."
+  - fr: "Merci beaucoup !"
+  - pause: 3
+  - no: "Tusen takk."
+  - fr: "Merci beaucoup !"
+  - pause: 3
+
+  - no: "Ord nummer tre."
+  - fr: "oui"
+  - pause: 2
+  - fr: "oui"
+  - pause: 2
+  - no: "Det betyr ja. Det uttales nesten som det engelske ordet we."
+  - fr: "Oui, merci."
+  - pause: 3
+  - no: "Ja, takk."
+  - pause: 1
+
+  - no: "Ord nummer fire."
+  - fr: "non"
+  - pause: 2
+  - fr: "non"
+  - pause: 2
+  - no: "Det betyr nei. Den siste n-en uttales ikke helt. Lyden går ut gjennom nesen i stedet."
+  - fr: "Non, merci."
+  - pause: 3
+  - no: "Nei takk."
+  - pause: 1
+
+  - no: "Ord nummer fem."
+  - fr: "je m'appelle"
+  - pause: 2
+  - fr: "je m'appelle"
+  - pause: 2
+  - no: "Det betyr jeg heter. Si det som ett langt ord. E-en helt på slutten er stum."
+  - fr: "Je m'appelle Edvard."
+  - pause: 3
+  - no: "Jeg heter Edvard."
+  - fr: "Je m'appelle Edvard. Et vous ?"
+  - pause: 3
+  - no: "Jeg heter Edvard. Og du? Det lille ordet på slutten betyr og du, på den høflige måten."
+  - pause: 1
+
+  - no: "Ord nummer seks."
+  - fr: "français"
+  - pause: 2
+  - fr: "français"
+  - pause: 2
+  - no: "Det betyr fransk, eller en fransk mann. S-en på slutten er stum."
+  - no: "Snakker du med en fransk kvinne, får ordet en ekstra lyd på slutten. Hør."
+  - fr: "française"
+  - pause: 2
+  - fr: "Vous êtes français ?"
+  - pause: 3
+  - no: "Er du fransk?"
+  - pause: 1
+
+  - no: "Ord nummer sju."
+  - fr: "la Norvège"
+  - pause: 2
+  - fr: "la Norvège"
+  - pause: 2
+  - no: "Det betyr Norge. Franskmenn setter et lite ord foran landnavn. Når du sier hvor du kommer fra, forsvinner det lille ordet."
+  - fr: "Je viens de Norvège."
+  - pause: 3
+  - no: "Jeg kommer fra Norge."
+  - fr: "Je viens de Norvège."
+  - pause: 3
+
+  - no: "Ord nummer åtte."
+  - fr: "d'où"
+  - pause: 2
+  - fr: "d'où"
+  - pause: 2
+  - no: "Det betyr hvorfra. Det uttales omtrent som det norske ordet du, med en rund og lang o-lyd."
+  - fr: "Vous venez d'où ?"
+  - pause: 3
+  - no: "Hvor kommer du fra?"
+  - pause: 1
+
+  - no: "Ord nummer ni."
+  - fr: "un peu"
+  - pause: 2
+  - fr: "un peu"
+  - pause: 2
+  - no: "Det betyr litt. Det siste ordet uttales nesten som en norsk ø."
+  - fr: "Oui, un peu."
+  - pause: 3
+  - no: "Ja, litt."
+  - pause: 1
+
+  - no: "Ord nummer ti, det siste for i dag."
+  - fr: "lentement"
+  - pause: 2
+  - fr: "lentement"
+  - pause: 2
+  - no: "Det betyr sakte. Begge en-lydene går gjennom nesen, og t-en helt på slutten er stum."
+  - fr: "Plus lentement, s'il vous plaît."
+  - pause: 3
+  - no: "Saktere, takk."
+  - fr: "Plus lentement, s'il vous plaît."
+  - pause: 3
+
+  - no: "Det var alle ti ordene. Nå hører du dem en gang til, bare på fransk. Si dem gjerne lavt etter."
+  - fr: "bonjour"
+  - pause: 3
+  - fr: "merci"
+  - pause: 3
+  - fr: "oui"
+  - pause: 3
+  - fr: "non"
+  - pause: 3
+  - fr: "je m'appelle"
+  - pause: 3
+  - fr: "français"
+  - pause: 3
+  - fr: "la Norvège"
+  - pause: 3
+  - fr: "d'où"
+  - pause: 3
+  - fr: "un peu"
+  - pause: 3
+  - fr: "lentement"
+  - pause: 3
+
+  # 4. Ukas fraser
+  - no: "Nå setter vi ordene sammen til setninger du kan bruke med en gang. Lange setninger bygger vi bakfra, bit for bit."
+  - pause: 1
+
+  - no: "Første setning. Du hører noen snakke fransk og vil starte en prat. Da kan du si: hei, er dere franske?"
+  - fr: "français ?"
+  - pause: 2
+  - fr: "vous êtes français ?"
+  - pause: 2
+  - fr: "Bonjour, vous êtes français ?"
+  - pause: 3
+  - fr: "Bonjour, vous êtes français ?"
+  - pause: 3
+  - no: "Det lille ordet i midten betyr både du og dere. Det er den høflige formen, og den bruker du alltid med turister."
+  - pause: 1
+
+  - no: "Andre setning. Jeg heter Edvard."
+  - fr: "Je m'appelle Edvard."
+  - pause: 3
+  - fr: "Je m'appelle Edvard."
+  - pause: 3
+  - no: "Svaret du ofte får, er dette."
+  - fr: "Enchanté !"
+  - pause: 3
+  - no: "Det betyr hyggelig å hilse på deg. Du kan si det samme tilbake."
+  - fr: "Enchanté !"
+  - pause: 3
+
+  - no: "Tredje setning. Hvor kommer dere fra?"
+  - fr: "d'où ?"
+  - pause: 2
+  - fr: "vous venez d'où ?"
+  - pause: 2
+  - fr: "Vous venez d'où ?"
+  - pause: 3
+  - no: "Svaret kan for eksempel være dette."
+  - fr: "Je viens de Lyon."
+    stemme: b
+  - pause: 2
+  - no: "Jeg kommer fra Lyon."
+  - pause: 1
+
+  - no: "Fjerde setning. Når de spør tilbake, kan du si: jeg kommer fra Norge, jeg bor i Oslo."
+  - fr: "à Oslo"
+  - pause: 2
+  - fr: "j'habite à Oslo"
+  - pause: 2
+  - fr: "Je viens de Norvège"
+  - pause: 2
+  - fr: "Je viens de Norvège, j'habite à Oslo."
+  - pause: 3
+  - fr: "Je viens de Norvège, j'habite à Oslo."
+  - pause: 3
+  - no: "H-en i ordet for å bo er stum. Det høres ut som om ordet starter på a."
+  - pause: 1
+
+  - no: "Femte setning. Jeg snakker litt fransk. Den er gull verdt, for da vet de at de må snakke enkelt."
+  - fr: "un peu français"
+  - pause: 2
+  - fr: "je parle un peu français"
+  - pause: 2
+  - fr: "Je parle un peu français."
+  - pause: 3
+  - fr: "Je parle un peu français."
+  - pause: 3
+
+  - no: "Sjette og siste setning. Kanskje den viktigste. Kan du snakke litt saktere?"
+  - fr: "lentement"
+  - pause: 2
+  - fr: "plus lentement"
+  - pause: 2
+  - fr: "parler plus lentement"
+  - pause: 2
+  - fr: "Vous pouvez parler plus lentement ?"
+  - pause: 3
+  - no: "Og så den høflige avslutningen, som betyr vær så snill."
+  - fr: "s'il vous plaît"
+  - pause: 2
+  - fr: "Vous pouvez parler plus lentement, s'il vous plaît ?"
+  - pause: 3
+  - fr: "Vous pouvez parler plus lentement, s'il vous plaît ?"
+  - pause: 3
+
+  - no: "Nå tester vi setningene. Du hører den norske setningen. Prøv å si den på fransk inni deg før du hører svaret."
+  - no: "Hei, er dere franske?"
+  - pause: 4
+  - fr: "Bonjour, vous êtes français ?"
+  - pause: 3
+  - no: "Jeg heter Edvard."
+  - pause: 4
+  - fr: "Je m'appelle Edvard."
+  - pause: 3
+  - no: "Hyggelig å hilse på deg."
+  - pause: 4
+  - fr: "Enchanté !"
+  - pause: 3
+  - no: "Hvor kommer dere fra?"
+  - pause: 4
+  - fr: "Vous venez d'où ?"
+  - pause: 3
+  - no: "Jeg kommer fra Norge, jeg bor i Oslo."
+  - pause: 4
+  - fr: "Je viens de Norvège, j'habite à Oslo."
+  - pause: 3
+  - no: "Jeg snakker litt fransk."
+  - pause: 4
+  - fr: "Je parle un peu français."
+  - pause: 3
+  - no: "Kan du snakke litt saktere?"
+  - pause: 4
+  - fr: "Vous pouvez parler plus lentement, s'il vous plaît ?"
+  - pause: 3
+
+  # 5. Dialog
+  - no: "Nå kommer en kort samtale. Edvard står på taket av Operaen i Oslo og hører en kvinne snakke fransk. Først sakte, med forklaringer underveis."
+  - pause: 1
+  - fr: "Bonjour ! Vous êtes française ?"
+    stemme: b
+  - no: "Hei, er du fransk? Han sier française fordi han snakker med en kvinne."
+  - fr: "Oui ! Bonjour. Vous parlez français ?"
+  - no: "Ja! Hei. Snakker du fransk?"
+  - fr: "Un peu. Je m'appelle Edvard."
+    stemme: b
+  - fr: "Enchantée. Je m'appelle Claire."
+  - no: "Hyggelig å hilse på deg. Jeg heter Claire."
+  - fr: "Enchanté. Vous venez d'où ?"
+    stemme: b
+  - fr: "Je viens de Lyon. Et vous ?"
+  - no: "Jeg kommer fra Lyon. Og du?"
+  - fr: "Je viens de Norvège, j'habite à Oslo."
+    stemme: b
+  - fr: "C'est très beau, Oslo !"
+  - no: "Det er veldig fint, Oslo!"
+  - fr: "Merci ! Vous pouvez parler plus lentement, s'il vous plaît ?"
+    stemme: b
+  - fr: "Oui, bien sûr. C'est très beau ici."
+  - no: "Ja, selvfølgelig. Det er veldig fint her."
+  - fr: "Merci. Bonne journée !"
+    stemme: b
+  - fr: "Merci, bonne journée !"
+  - no: "Takk, ha en fin dag! Et nyttig uttrykk å ta med seg når du skal si ha det."
+  - pause: 2
+
+  - no: "Nå hele samtalen en gang til, i nesten normalt tempo, uten avbrudd."
+  - pause: 1
+  - fr: "Bonjour ! Vous êtes française ?"
+    stemme: b
+    fart: normal
+  - fr: "Oui ! Bonjour. Vous parlez français ?"
+    fart: normal
+  - fr: "Un peu. Je m'appelle Edvard."
+    stemme: b
+    fart: normal
+  - fr: "Enchantée. Je m'appelle Claire."
+    fart: normal
+  - fr: "Enchanté. Vous venez d'où ?"
+    stemme: b
+    fart: normal
+  - fr: "Je viens de Lyon. Et vous ?"
+    fart: normal
+  - fr: "Je viens de Norvège, j'habite à Oslo."
+    stemme: b
+    fart: normal
+  - fr: "C'est très beau, Oslo !"
+    fart: normal
+  - fr: "Merci ! Vous pouvez parler plus lentement, s'il vous plaît ?"
+    stemme: b
+    fart: normal
+  - fr: "Oui, bien sûr. C'est très beau ici."
+    fart: normal
+  - fr: "Merci. Bonne journée !"
+    stemme: b
+    fart: normal
+  - fr: "Merci, bonne journée !"
+    fart: normal
+  - pause: 2
+
+  - no: "Nå er det din tur. Du er Edvard. Claire sier sine replikker, og du får en pause til å svare. Start selv med å spørre om hun er fransk."
+  - pause: 4
+  - fr: "Oui ! Bonjour. Vous parlez français ?"
+  - pause: 5
+  - fr: "Enchantée. Je m'appelle Claire."
+  - pause: 5
+  - fr: "Je viens de Lyon. Et vous ?"
+  - pause: 5
+  - fr: "C'est très beau, Oslo !"
+  - pause: 5
+  - fr: "Oui, bien sûr. C'est très beau ici."
+  - pause: 5
+  - fr: "Merci, bonne journée !"
+  - pause: 5
+  - no: "Bra jobbet. Det er akkurat denne samtalen du skal ha med Codex i helgen."
+  - pause: 2
+
+  # 6. Avslutning
+  - no: "Til slutt de ti ordene en gang til. Du hører det norske ordet. Prøv å komme på det franske før du hører det."
+  - no: "Hei."
+  - pause: 3
+  - fr: "bonjour"
+  - pause: 2
+  - no: "Takk."
+  - pause: 3
+  - fr: "merci"
+  - pause: 2
+  - no: "Ja."
+  - pause: 3
+  - fr: "oui"
+  - pause: 2
+  - no: "Nei."
+  - pause: 3
+  - fr: "non"
+  - pause: 2
+  - no: "Jeg heter."
+  - pause: 3
+  - fr: "je m'appelle"
+  - pause: 2
+  - no: "Fransk."
+  - pause: 3
+  - fr: "français"
+  - pause: 2
+  - no: "Norge."
+  - pause: 3
+  - fr: "la Norvège"
+  - pause: 2
+  - no: "Hvorfra."
+  - pause: 3
+  - fr: "d'où"
+  - pause: 2
+  - no: "Litt."
+  - pause: 3
+  - fr: "un peu"
+  - pause: 2
+  - no: "Sakte."
+  - pause: 3
+  - fr: "lentement"
+  - pause: 2
+  - no: "Det var uke én. I helgen tar du en samtale med Codex. Instruksen finner du i episodebeskrivelsen. Du står på taket av Operaen og møter en fransk turist. Bruk setningene fra i dag."
+  - no: "Hør gjerne episoden en gang til på neste løpetur. God tur videre, og vi høres neste uke."
+  - fr: "À la semaine prochaine !"
