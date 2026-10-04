@@ -20,6 +20,20 @@ fraser:
   - { fr: "Je viens de Norvège, j'habite à Oslo.", no: "Jeg kommer fra Norge, jeg bor i Oslo." }
   - { fr: "Je parle un peu français.", no: "Jeg snakker litt fransk." }
   - { fr: "Vous pouvez parler plus lentement, s'il vous plaît ?", no: "Kan du snakke litt saktere?" }
+andre_ord:
+  - { fr: "vous", no: "du, dere (høflig)" }
+  - { fr: "et", no: "og" }
+  - { fr: "madame", no: "frue" }
+  - { fr: "monsieur", no: "herr, til en mann" }
+  - { fr: "beaucoup", no: "mye" }
+  - { fr: "enchanté", no: "hyggelig å hilse på deg" }
+  - { fr: "s'il vous plaît", no: "vær så snill" }
+  - { fr: "plus", no: "mer" }
+  - { fr: "bonne journée", no: "ha en fin dag" }
+  - { fr: "bien sûr", no: "selvfølgelig" }
+  - { fr: "très", no: "veldig" }
+  - { fr: "beau", no: "fin, vakker" }
+  - { fr: "ici", no: "her" }
 codex_instruks: |
   Du er Claire, en fransk turist fra Lyon som står på taket av Operaen i Oslo og ser på utsikten. Jeg er nordmann og lærer fransk. Jeg har litt skolefransk og er på uke 1.
   Snakk bare fransk, sakte og med korte, enkle setninger. Hold deg så langt det går til disse ordene og frasene: bonjour, merci, oui, non, je m'appelle, français, la Norvège, d'où, un peu, lentement, Vous êtes français ?, Enchanté !, Vous venez d'où ?, Je viens de…, J'habite à…, Je parle un peu français, Vous pouvez parler plus lentement, s'il vous plaît ?

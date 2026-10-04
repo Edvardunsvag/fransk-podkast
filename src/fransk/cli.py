@@ -7,6 +7,7 @@ from fransk import lyd
 from fransk.bygg import bygg_episode
 from fransk.config import BASE_URL
 from fransk.feed import lag_feed
+from fransk.kjente import kjente_ord
 from fransk.lyd import LydFeil
 from fransk.manus import ManusFeil, les_alle, les_episode, manus_sti
 from fransk.repetisjon import velg_repetisjon
@@ -44,6 +45,17 @@ def repetisjon(rot: Path, uke: int) -> int:
     if not valgt:
         print("Ingen tidligere gloser å repetere.")
     for kilde_uke, o in valgt:
+        print(f"{o.fr} – {o.no} (uke {kilde_uke})")
+    return 0
+
+
+def kjente(rot: Path, uke: int) -> int:
+    mappe = _stier(rot)["manus"]
+    episoder = les_alle(mappe) if mappe.exists() else []
+    ord_ = kjente_ord(uke, episoder)
+    if not ord_:
+        print("Ingen kjente ord ennå.")
+    for kilde_uke, o in ord_:
         print(f"{o.fr} – {o.no} (uke {kilde_uke})")
     return 0
 
@@ -93,7 +105,7 @@ def publiser(rot: Path, uke: int) -> int:
     return 0
 
 
-KOMMANDOER = {"sjekk": sjekk, "repetisjon": repetisjon, "lag": lag, "publiser": publiser}
+KOMMANDOER = {"sjekk": sjekk, "repetisjon": repetisjon, "kjente": kjente, "lag": lag, "publiser": publiser}
 
 
 def main(argv: list[str] | None = None) -> int:
