@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>Fransk på løpetur</title>
+    <link>https://edvardunsvag.github.io/fransk-podkast</link>
+    <description>Én fransk leksjon i uka, laget for rolige løpeturer.</description>
+    <language>no</language>
+    <itunes:author>Edvard</itunes:author>
+    <itunes:image href="https://edvardunsvag.github.io/fransk-podkast/cover.jpg" />
+    <itunes:category text="Education" />
+    <itunes:explicit>false</itunes:explicit>
+    <item>
+      <title>Uke 01: Hei, hvor kommer du fra?</title>
+      <description>Hilse, presentere seg, spørre hvor folk kommer fra og be om at de snakker saktere.
+
+Gloser:
+- bonjour: hei, god dag
+- merci: takk
+- oui: ja
+- non: nei
+- je m'appelle: jeg heter
+- français: fransk
+- la Norvège: Norge
+- d'où: hvorfra
+- un peu: litt
+- lentement: sakte
+
+Fraser:
+- Bonjour, vous êtes français ?: Hei, er dere franske?
+- Je m'appelle Edvard.: Jeg heter Edvard.
+- Enchanté !: Hyggelig å hilse på deg!
+- Vous venez d'où ?: Hvor kommer dere fra?
+- Je viens de Norvège, j'habite à Oslo.: Jeg kommer fra Norge, jeg bor i Oslo.
+- Je parle un peu français.: Jeg snakker litt fransk.
+- Vous pouvez parler plus lentement, s'il vous plaît ?: Kan du snakke litt saktere?
+
+Helgesamtale med Codex. Lim inn dette:
+
+Du er Claire, en fransk turist fra Lyon som står på taket av Operaen i Oslo og ser på utsikten. Jeg er nordmann og lærer fransk. Jeg har litt skolefransk og er på uke 1.
+Snakk bare fransk, sakte og med korte, enkle setninger. Hold deg så langt det går til disse ordene og frasene: bonjour, merci, oui, non, je m'appelle, français, la Norvège, d'où, un peu, lentement, Vous êtes français ?, Enchanté !, Vous venez d'où ?, Je viens de…, J'habite à…, Je parle un peu français, Vous pouvez parler plus lentement, s'il vous plaît ?
+Etter hvert svar fra meg: hvis jeg sa noe feil, gi en kort rettelse på norsk i én setning, og fortsett så samtalen på fransk.
+Du starter samtalen. Etter rundt 10 minutter avslutter du og sier på norsk hvilke tre ting jeg bør øve mer på.</description>
+      <enclosure url="https://edvardunsvag.github.io/fransk-podkast/lyd/uke-01.mp3" length="9621360" type="audio/mpeg" />
+      <guid isPermaLink="false">https://edvardunsvag.github.io/fransk-podkast/lyd/uke-01.mp3</guid>
+      <pubDate>Sun, 04 Oct 2026 06:00:00 +0200</pubDate>
+      <itunes:duration>1203</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+    </item>
+  </channel>
+</rss>
