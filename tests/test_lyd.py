@@ -39,3 +39,28 @@ def test_mangler_ffmpeg(monkeypatch):
     monkeypatch.setattr(lyd.shutil, "which", lambda navn: None)
     with pytest.raises(lyd.LydFeil, match="brew install ffmpeg"):
         lyd.krev_ffmpeg()
+
+
+def test_avbrutt_koding_etterlater_ingen_fil(tmp_path, monkeypatch):
+    a = tone(tmp_path / "a.mp3", 1)
+    ekte = lyd._ffmpeg
+
+    def avbryt_siste(*args):
+        if "concat" in args:
+            open(args[-1], "wb").write(b"halv")
+            raise lyd.LydFeil("ffmpeg feilet: avbrutt")
+        ekte(*args)
+
+    monkeypatch.setattr(lyd, "_ffmpeg", avbryt_siste)
+    ut = tmp_path / "uke-01.mp3"
+    with pytest.raises(lyd.LydFeil):
+        lyd.sett_sammen([a], ut, "T", 1)
+    assert not ut.exists()
+    assert list(tmp_path.glob("*.tmp.mp3")) == []
+
+
+def test_odelagt_mp3_gir_lydfeil(tmp_path):
+    ut = tmp_path / "uke-01.mp3"
+    ut.write_bytes(b"ikke lyd")
+    with pytest.raises(lyd.LydFeil, match="kjør fransk lag"):
+        lyd.varighet(ut)

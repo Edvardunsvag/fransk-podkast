@@ -46,24 +46,33 @@ def sett_sammen(deler: list[Path | float], ut: Path, tittel: str, uke: int) -> N
             wavs.append(wav)
         liste = tmp_dir / "liste.txt"
         liste.write_text("".join(f"file '{w}'\n" for w in wavs), encoding="utf-8")
-        _ffmpeg(
-            "-f", "concat", "-safe", "0", "-i", str(liste),
-            "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
-            "-ac", "1", "-ar", "44100", "-c:a", "libmp3lame", "-b:a", "64k",
-            "-id3v2_version", "3",
-            "-metadata", f"title={tittel}",
-            "-metadata", f"album={PODKAST_TITTEL}",
-            "-metadata", f"track={uke}",
-            str(ut),
-        )
+        tmp_ut = ut.with_suffix(".tmp.mp3")
+        try:
+            _ffmpeg(
+                "-f", "concat", "-safe", "0", "-i", str(liste),
+                "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
+                "-ac", "1", "-ar", "44100", "-c:a", "libmp3lame", "-b:a", "64k",
+                "-id3v2_version", "3",
+                "-metadata", f"title={tittel}",
+                "-metadata", f"album={PODKAST_TITTEL}",
+                "-metadata", f"track={uke}",
+                str(tmp_ut),
+            )
+        except BaseException:
+            tmp_ut.unlink(missing_ok=True)
+            raise
+        tmp_ut.replace(ut)
 
 
 def varighet(mp3: Path) -> int:
     krev_ffmpeg()
-    resultat = subprocess.run(
-        ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", str(mp3)],
-        check=True,
-        capture_output=True,
-        text=True,
-    )
-    return round(float(resultat.stdout.strip()))
+    try:
+        resultat = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", str(mp3)],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        return round(float(resultat.stdout.strip()))
+    except (subprocess.CalledProcessError, ValueError) as e:
+        raise LydFeil(f"Kan ikke lese {mp3.name}. Slett filen og kjør fransk lag på nytt.") from e

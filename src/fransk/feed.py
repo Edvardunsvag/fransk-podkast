@@ -26,9 +26,11 @@ def beskrivelse(ep: Episode) -> str:
     return "\n".join(linjer)
 
 
-def publiseringstid(uke: int) -> datetime:
+def publiseringstid(uke: int, naa: datetime | None = None) -> datetime:
+    # Planlagt dato gir riktig rekkefølge, men aldri fram i tid: noen apper skjuler slike episoder.
     dag = START_DATO + timedelta(weeks=uke - 1)
-    return datetime.combine(dag, time(6, 0), tzinfo=ZoneInfo("Europe/Oslo"))
+    planlagt = datetime.combine(dag, time(6, 0), tzinfo=ZoneInfo("Europe/Oslo"))
+    return min(planlagt, naa or datetime.now(ZoneInfo("Europe/Oslo")))
 
 
 def lag_feed(

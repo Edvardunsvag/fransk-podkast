@@ -45,5 +45,12 @@ def test_beskrivelse_har_gloser_fraser_og_instruks():
 
 
 def test_publiseringstid_er_ukentlig():
-    assert (publiseringstid(2) - publiseringstid(1)).days == 7
-    assert publiseringstid(1).hour == 6
+    senere = publiseringstid(1) + __import__("datetime").timedelta(days=365)
+    assert (publiseringstid(2, naa=senere) - publiseringstid(1, naa=senere)).days == 7
+    assert publiseringstid(1, naa=senere).hour == 6
+
+
+def test_publiseringstid_aldri_fram_i_tid():
+    tidlig = publiseringstid(1) + __import__("datetime").timedelta(days=1)
+    assert publiseringstid(5, naa=tidlig) == tidlig
+    assert publiseringstid(1, naa=tidlig) == publiseringstid(1)
