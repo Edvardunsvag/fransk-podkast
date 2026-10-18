@@ -1,0 +1,583 @@
+uke: 3
+tittel: "Jobb, bosted og alder"
+beskrivelse: "Spørre turister hva de jobber med, hvor de bor og hvor gamle de er. Med verbene avoir og faire og hele presens av verb på -er."
+gloser:
+  - { fr: "travailler", no: "å jobbe" }
+  - { fr: "avoir", no: "å ha" }
+  - { fr: "faire", no: "å gjøre, å lage" }
+  - { fr: "un an", no: "ett år (ans = år, om alder)" }
+  - { fr: "où", no: "hvor (om sted)" }
+  - { fr: "quoi", no: "hva" }
+  - { fr: "étudiant", no: "student" }
+  - { fr: "la ville", no: "byen" }
+  - { fr: "près de", no: "nær, i nærheten av" }
+  - { fr: "aussi", no: "også" }
+fraser:
+  - { fr: "Vous faites quoi dans la vie ?", no: "Hva jobber dere med?" }
+  - { fr: "Je travaille ici.", no: "Jeg jobber her." }
+  - { fr: "Je suis étudiant.", no: "Jeg er student." }
+  - { fr: "Vous habitez où ?", no: "Hvor bor dere?" }
+  - { fr: "J'habite près de Paris.", no: "Jeg bor nær Paris." }
+  - { fr: "J'ai trente-cinq ans.", no: "Jeg er 35 år." }
+  - { fr: "Moi aussi, j'habite à Oslo.", no: "Jeg bor også i Oslo." }
+andre_ord:
+  - { fr: "tu", no: "du (til venner og barn)" }
+  - { fr: "il", no: "han" }
+  - { fr: "elle", no: "hun" }
+  - { fr: "ils", no: "de (menn eller blandet gruppe)" }
+  - { fr: "moi", no: "meg, jeg (med trykk)" }
+  - { fr: "dans la vie", no: "i livet" }
+  - { fr: "un voyage", no: "en reise" }
+  - { fr: "dans", no: "i, inne i" }
+  - { fr: "grand", no: "stor (grande foran hunkjønn)" }
+  - { fr: "petit", no: "liten (petite foran hunkjønn)" }
+  - { fr: "belle", no: "vakker (hunkjønn av beau)" }
+  - { fr: "étudiante", no: "kvinnelig student" }
+  - { fr: "française", no: "fransk (om en kvinne)" }
+  - { fr: "cinq", no: "fem" }
+  - { fr: "trente", no: "tretti" }
+  - { fr: "trente-cinq", no: "trettifem" }
+  - { fr: "vingt-cinq", no: "tjuefem" }
+  - { fr: "vingt-trois", no: "tjuetre" }
+codex_instruks: |
+  Du er Julie, en fransk turist fra Bordeaux som venter på trikken utenfor Vigelandsparken i Oslo. Du er 28 år og jobber som lærer. Jeg er nordmann og lærer fransk. Jeg har litt skolefransk og er på uke 3.
+  Snakk bare fransk, sakte og med korte, enkle setninger. Hold deg så langt det går til disse ordene og frasene: travailler, avoir, faire, un an, où, quoi, étudiant, la ville, près de, aussi, Vous faites quoi dans la vie ?, Je travaille à…, Je suis étudiant, Vous habitez où ?, J'habite près de…, J'ai … ans, Moi aussi, og fra tidligere uker: bonjour, merci, Vous venez d'où ?, Je viens de…, J'habite à…, C'est la première fois que vous venez en Norvège ?, Vous êtes ici depuis combien de temps ?, Ça vous plaît, la Norvège ?, Vous pouvez parler plus lentement ?
+  Etter hvert svar fra meg: hvis jeg sa noe feil, gi en kort rettelse på norsk i én setning, og fortsett så samtalen på fransk.
+  Du starter samtalen. Etter rundt 10 minutter avslutter du og sier på norsk hvilke tre ting jeg bør øve mer på.
+segmenter:
+  # 1. Intro
+  - no: "Velkommen til uke tre av Fransk på løpetur."
+  - no: "I dag lærer du å snakke om jobb, om hvor man bor og om hvor gammel man er. Du lærer to viktige verb, å ha og å gjøre, og du ser hvordan et vanlig verb bøyes i alle personer."
+  - no: "Etter episoden kan du spørre en turist hva hun jobber med og hvor hun bor, og svare det samme om deg selv."
+  - pause: 2
+
+  # 2. Repetisjon
+  - no: "Først en rask repetisjon. Du hører det norske ordet, og så det franske."
+  - no: "Første gang."
+  - pause: 3
+  - fr: "la première fois"
+  - pause: 1
+  - no: "Ja."
+  - pause: 3
+  - fr: "oui"
+  - pause: 1
+  - no: "Hvor lenge."
+  - pause: 3
+  - fr: "combien de temps"
+  - pause: 1
+  - no: "Nei."
+  - pause: 3
+  - fr: "non"
+  - pause: 1
+  - no: "Siden, om tid."
+  - pause: 3
+  - fr: "depuis"
+  - pause: 1
+  - no: "Jeg heter."
+  - pause: 3
+  - fr: "je m'appelle"
+  - pause: 1
+  - no: "Å bli værende."
+  - pause: 3
+  - fr: "rester"
+  - pause: 1
+  - no: "Fransk."
+  - pause: 3
+  - fr: "français"
+  - pause: 2
+
+  # 3. Ukas 10 gloser
+  - no: "Så ukas ti ord. Ord nummer én."
+  - fr: "travailler"
+  - pause: 2
+  - fr: "travailler"
+  - pause: 2
+  - no: "Det betyr å jobbe."
+  - fr: "Je travaille à Oslo."
+  - pause: 3
+  - no: "Jeg jobber i Oslo."
+  - fr: "je travaille"
+  - no: "kommer av"
+  - fr: "travailler"
+  - no: "i jeg-formen. Og"
+  - fr: "à"
+  - no: "betyr i, som i"
+  - fr: "j'habite à"
+  - no: "fra forrige uke."
+  - pause: 1
+  - no: "Nå kan du hele presens av et vanlig verb på e r. Vi tar travailler. Jeg:"
+  - fr: "je travaille"
+  - pause: 2
+  - no: "Du, til en venn eller et barn:"
+  - fr: "tu travailles"
+  - pause: 2
+  - no: "Han, eller hun:"
+  - fr: "il travaille"
+  - pause: 2
+  - fr: "elle travaille"
+  - pause: 2
+  - no: "Vi:"
+  - fr: "nous travaillons"
+  - pause: 2
+  - no: "Dere, eller du, høflig:"
+  - fr: "vous travaillez"
+  - pause: 2
+  - no: "De:"
+  - fr: "ils travaillent"
+  - pause: 2
+  - no: "Overraskelsen her er at fire av formene høres helt like ut. Hør selv."
+  - fr: "je travaille, tu travailles, il travaille, ils travaillent"
+  - pause: 2
+  - no: "Endelsene er stumme. Bare vi-formen og vous-formen høres annerledes ut. Mot turister bruker du fortsatt vous."
+  - pause: 1
+
+  - no: "Ord nummer to."
+  - fr: "avoir"
+  - pause: 2
+  - fr: "avoir"
+  - pause: 2
+  - no: "Det betyr å ha. Det er uregelrett, så vi tar de viktigste formene med en gang. Jeg har:"
+  - fr: "j'ai"
+  - pause: 2
+  - no: "Dere har:"
+  - fr: "vous avez"
+  - pause: 2
+  - no: "Vi har:"
+  - fr: "nous avons"
+  - pause: 2
+  - no: "Han eller hun har:"
+  - fr: "il a"
+  - pause: 2
+  - fr: "Nous avons une semaine."
+  - pause: 3
+  - no: "Vi har en uke."
+  - fr: "une semaine"
+  - no: "kjenner du fra forrige uke."
+  - pause: 1
+
+  - no: "Ord nummer tre."
+  - fr: "faire"
+  - pause: 2
+  - fr: "faire"
+  - pause: 2
+  - no: "Det betyr å gjøre, eller å lage. Også dette er uregelrett. Jeg gjør:"
+  - fr: "je fais"
+  - pause: 2
+  - no: "Dere gjør:"
+  - fr: "vous faites"
+  - pause: 2
+  - no: "Vi gjør:"
+  - fr: "nous faisons"
+  - pause: 2
+  - no: "Her er en overraskelse i uttalen. A i en på starten av"
+  - fr: "faisons"
+  - no: "uttales som en kort ø-lyd, nesten som føsong."
+  - fr: "Nous faisons un voyage en Norvège."
+  - pause: 3
+  - no: "Vi er på reise i Norge. Ordrett: vi gjør en reise i Norge."
+  - fr: "un voyage"
+  - no: "betyr en reise. Og"
+  - fr: "en Norvège"
+  - no: "kjenner du fra forrige uke."
+  - pause: 1
+
+  - no: "Ord nummer fire."
+  - fr: "un an"
+  - pause: 2
+  - fr: "un an"
+  - pause: 2
+  - no: "Det betyr ett år. I flertall skrives det med s på slutten:"
+  - fr: "ans"
+  - no: "men s-en høres ikke. Dette er ordet du bruker om alder. Og her er en stor forskjell fra norsk. Franskmenn sier ikke jeg er 35 år. De sier jeg har 35 år."
+  - fr: "J'ai trente-cinq ans."
+  - pause: 3
+  - no: "Jeg er 35 år. Ordrett: jeg har 35 år."
+  - fr: "j'ai"
+  - no: "kjenner du nå fra å ha."
+  - fr: "trente"
+  - no: "betyr tretti, og"
+  - fr: "cinq"
+  - no: "betyr fem. Så"
+  - fr: "trente-cinq"
+  - no: "er 35."
+  - pause: 1
+
+  - no: "Ord nummer fem."
+  - fr: "où"
+  - pause: 2
+  - fr: "où"
+  - pause: 2
+  - no: "Det betyr hvor, når du spør om et sted. Du kjenner det allerede inni"
+  - fr: "d'où"
+  - no: "som er de pluss"
+  - fr: "où"
+  - no: "altså hvorfra."
+  - fr: "Vous habitez où ?"
+  - pause: 3
+  - no: "Hvor bor dere? Ordrett: dere bor hvor?"
+  - fr: "vous habitez"
+  - no: "kjenner du fra forrige uke."
+  - pause: 1
+
+  - no: "Ord nummer seks."
+  - fr: "quoi"
+  - pause: 2
+  - fr: "quoi"
+  - pause: 2
+  - no: "Det betyr hva."
+  - fr: "Vous faites quoi ?"
+  - pause: 3
+  - no: "Hva gjør dere? Ordrett: dere gjør hva?"
+  - fr: "vous faites"
+  - no: "er vous-formen av"
+  - fr: "faire"
+  - no: "som du nettopp lærte."
+  - pause: 1
+
+  - no: "Ord nummer sju."
+  - fr: "étudiant"
+  - pause: 2
+  - fr: "étudiant"
+  - pause: 2
+  - no: "Det betyr student. For en kvinne sier man"
+  - fr: "étudiante"
+  - no: "og da uttales t-en på slutten. Hos en mann er den stum."
+  - fr: "Je suis étudiante."
+  - pause: 3
+  - no: "Jeg er student, sagt av en kvinne. Franskmenn sier ikke en student, bare student. Og"
+  - fr: "je suis"
+  - no: "kjenner du fra å være."
+  - pause: 1
+
+  - no: "Ord nummer åtte."
+  - fr: "la ville"
+  - pause: 2
+  - fr: "la ville"
+  - pause: 2
+  - no: "Det betyr byen."
+  - fr: "J'habite dans une grande ville."
+  - pause: 3
+  - no: "Jeg bor i en stor by."
+  - fr: "dans"
+  - no: "betyr i, inne i. Og"
+  - fr: "grande"
+  - no: "betyr stor. Det får e på slutten fordi"
+  - fr: "ville"
+  - no: "er et hunkjønnsord, som"
+  - fr: "une semaine"
+  - pause: 1
+
+  - no: "Ord nummer ni."
+  - fr: "près de"
+  - pause: 2
+  - fr: "près de"
+  - pause: 2
+  - no: "Det betyr nær, eller i nærheten av."
+  - fr: "J'habite près de Bergen."
+  - pause: 3
+  - no: "Jeg bor nær Bergen. Foran en vokal blir"
+  - fr: "de"
+  - no: "til"
+  - fr: "d'"
+  - no: "Eksempel:"
+  - fr: "près d'Oslo"
+  - pause: 3
+  - no: "Nær Oslo."
+  - pause: 1
+
+  - no: "Ord nummer ti."
+  - fr: "aussi"
+  - pause: 2
+  - fr: "aussi"
+  - pause: 2
+  - no: "Det betyr også."
+  - fr: "Moi aussi, j'habite à Oslo."
+  - pause: 3
+  - no: "Jeg bor også i Oslo. Ordrett: meg også, jeg bor i Oslo."
+  - fr: "moi"
+  - no: "betyr meg, og brukes når du vil legge trykk på deg selv. Og så en vending du kommer til å bruke mye:"
+  - fr: "Vous aussi !"
+  - pause: 3
+  - no: "Det betyr i like måte. Det sier du når noen ønsker deg en fin dag, og du vil si det samme tilbake."
+  - pause: 2
+
+  - no: "Det var ukas ti ord. En gang til, bare på fransk."
+  - fr: "travailler"
+  - pause: 2
+  - fr: "avoir"
+  - pause: 2
+  - fr: "faire"
+  - pause: 2
+  - fr: "un an"
+  - pause: 2
+  - fr: "où"
+  - pause: 2
+  - fr: "quoi"
+  - pause: 2
+  - fr: "étudiant"
+  - pause: 2
+  - fr: "la ville"
+  - pause: 2
+  - fr: "près de"
+  - pause: 2
+  - fr: "aussi"
+  - pause: 2
+
+  # 4. Ukas fraser
+  - no: "Nå setter vi ordene sammen til setninger. Lange setninger bygger vi bakfra."
+  - pause: 1
+
+  - no: "Første setning. Hva jobber dere med?"
+  - fr: "dans la vie ?"
+  - pause: 2
+  - fr: "quoi dans la vie ?"
+  - pause: 2
+  - fr: "Vous faites quoi dans la vie ?"
+  - pause: 3
+  - no: "Ordrett: dere gjør hva i livet?"
+  - fr: "dans la vie"
+  - no: "betyr i livet. Og"
+  - fr: "faites"
+  - no: "er ikke regelmessig. Det heter"
+  - fr: "vous faites"
+  - no: "og ikke"
+  - fr: "vous faisez"
+  - fr: "Vous faites quoi dans la vie ?"
+  - pause: 3
+
+  - no: "Andre setning er et svar du kan få."
+  - fr: "Je travaille ici."
+    stemme: b
+  - pause: 3
+  - no: "Jeg jobber her. Alle ordene kjenner du."
+  - pause: 1
+
+  - no: "Tredje setning er også et svar."
+  - fr: "Je suis étudiant."
+    stemme: b
+  - pause: 3
+  - no: "Jeg er student. Alle ordene kjenner du."
+  - pause: 1
+
+  - no: "Fjerde setning. Hvor bor dere?"
+  - fr: "où ?"
+  - pause: 2
+  - fr: "habitez où ?"
+  - pause: 2
+  - fr: "Vous habitez où ?"
+  - pause: 3
+  - no: "Ordrett: dere bor hvor?"
+  - fr: "Vous habitez où ?"
+  - pause: 3
+
+  - no: "Femte setning, et svar på det. Jeg bor nær Paris."
+  - fr: "près de Paris"
+    stemme: b
+  - pause: 2
+  - fr: "J'habite près de Paris."
+    stemme: b
+  - pause: 3
+  - fr: "j'habite"
+  - no: "kommer av"
+  - fr: "habiter"
+  - no: "å bo, i jeg-formen."
+  - fr: "J'habite près de Paris."
+    stemme: b
+  - pause: 3
+
+  - no: "Sjette setning. Jeg er 35 år."
+  - fr: "ans"
+    stemme: b
+  - pause: 2
+  - fr: "trente-cinq ans"
+    stemme: b
+  - pause: 2
+  - fr: "J'ai trente-cinq ans."
+    stemme: b
+  - pause: 3
+  - no: "Ordrett: jeg har 35 år. Du kan bytte ut tallet. For eksempel"
+  - fr: "vingt-cinq"
+  - no: "som er tjuefem, eller"
+  - fr: "vingt-trois"
+  - no: "som er tjuetre."
+  - fr: "J'ai trente-cinq ans."
+    stemme: b
+  - pause: 3
+
+  - no: "Sjuende og siste setning. Jeg bor også i Oslo."
+  - fr: "j'habite à Oslo"
+    stemme: b
+  - pause: 2
+  - fr: "Moi aussi, j'habite à Oslo."
+    stemme: b
+  - pause: 3
+  - no: "Ordrett: meg også, jeg bor i Oslo."
+  - fr: "Moi aussi, j'habite à Oslo."
+    stemme: b
+  - pause: 3
+
+  - no: "Nå tester vi setningene. Du hører den norske setningen. Prøv å si den på fransk før svaret kommer."
+  - no: "Hva jobber dere med?"
+  - pause: 4
+  - fr: "Vous faites quoi dans la vie ?"
+  - pause: 2
+  - no: "Jeg jobber her."
+  - pause: 4
+  - fr: "Je travaille ici."
+  - pause: 2
+  - no: "Jeg er student."
+  - pause: 4
+  - fr: "Je suis étudiant."
+  - pause: 2
+  - no: "Hvor bor dere?"
+  - pause: 4
+  - fr: "Vous habitez où ?"
+  - pause: 2
+  - no: "Jeg bor nær Paris."
+  - pause: 4
+  - fr: "J'habite près de Paris."
+  - pause: 2
+  - no: "Jeg er 35 år."
+  - pause: 4
+  - fr: "J'ai trente-cinq ans."
+  - pause: 2
+  - no: "Jeg bor også i Oslo."
+  - pause: 4
+  - fr: "Moi aussi, j'habite à Oslo."
+  - pause: 2
+
+  # 5. Dialog
+  - no: "Nå kommer en samtale. Edvard står i kø ved Vigelandsparken i Oslo. Foran ham står to unge kvinner og snakker fransk. Først sakte, med forklaringer på nye ord."
+  - pause: 1
+  - fr: "Bonjour ! Vous êtes françaises ?"
+    stemme: b
+  - fr: "françaises"
+  - no: "er hunkjønn flertall av"
+  - fr: "français"
+  - no: "S-en høres ikke."
+  - fr: "Oui, nous venons de Lyon."
+  - fr: "nous venons"
+  - no: "er vi-formen av"
+  - fr: "venir"
+  - no: "å komme. Vi-formen ender på o n s."
+  - fr: "Vous faites quoi dans la vie ?"
+    stemme: b
+  - fr: "Nous sommes étudiantes. J'ai vingt-cinq ans, et elle a vingt-trois ans."
+  - fr: "elle"
+  - no: "betyr hun. Og"
+  - fr: "elle a"
+  - no: "er hun har, fra"
+  - fr: "avoir"
+  - fr: "Vous habitez où ?"
+    stemme: b
+  - fr: "Nous habitons près de Lyon, dans une petite ville."
+  - fr: "nous habitons"
+  - no: "er vi-formen av"
+  - fr: "habiter"
+  - no: "Og"
+  - fr: "petite"
+  - no: "betyr liten, i hunkjønn."
+  - fr: "Et vous, vous travaillez à Oslo ?"
+  - fr: "Oui, je travaille à Oslo. J'habite à Oslo aussi."
+    stemme: b
+  - fr: "Oslo, c'est une belle ville !"
+  - fr: "belle"
+  - no: "betyr vakker. Det er hunkjønn av"
+  - fr: "beau"
+  - no: "som du kjenner fra uke én."
+  - fr: "Merci ! Bonne journée !"
+    stemme: b
+  - fr: "Vous aussi !"
+  - pause: 2
+
+  - no: "Nå hele samtalen en gang til, i nesten normalt tempo, uten avbrudd."
+  - pause: 1
+  - fr: "Bonjour ! Vous êtes françaises ?"
+    stemme: b
+    fart: normal
+  - fr: "Oui, nous venons de Lyon."
+    fart: normal
+  - fr: "Vous faites quoi dans la vie ?"
+    stemme: b
+    fart: normal
+  - fr: "Nous sommes étudiantes. J'ai vingt-cinq ans, et elle a vingt-trois ans."
+    fart: normal
+  - fr: "Vous habitez où ?"
+    stemme: b
+    fart: normal
+  - fr: "Nous habitons près de Lyon, dans une petite ville."
+    fart: normal
+  - fr: "Et vous, vous travaillez à Oslo ?"
+    fart: normal
+  - fr: "Oui, je travaille à Oslo. J'habite à Oslo aussi."
+    stemme: b
+    fart: normal
+  - fr: "Oslo, c'est une belle ville !"
+    fart: normal
+  - fr: "Merci ! Bonne journée !"
+    stemme: b
+    fart: normal
+  - fr: "Vous aussi !"
+    fart: normal
+  - pause: 2
+
+  - no: "Nå er det din tur. Du er Edvard. Du hører kvinnens replikker og får en pause til å svare. Start selv med å spørre om de er franske."
+  - pause: 4
+  - fr: "Oui, nous venons de Lyon."
+  - pause: 5
+  - fr: "Nous sommes étudiantes. J'ai vingt-cinq ans, et elle a vingt-trois ans."
+  - pause: 5
+  - fr: "Nous habitons près de Lyon, dans une petite ville. Et vous, vous travaillez à Oslo ?"
+  - pause: 5
+  - fr: "Oslo, c'est une belle ville !"
+  - pause: 5
+  - fr: "Vous aussi !"
+  - pause: 4
+  - no: "Bra. Det er denne samtalen du skal ha med Codex i helgen."
+  - pause: 2
+
+  # 6. Avslutning
+  - no: "Til slutt ukas ti ord. Du hører det norske. Prøv å komme på det franske før du hører det."
+  - no: "Å jobbe."
+  - pause: 3
+  - fr: "travailler"
+  - pause: 1
+  - no: "Å ha."
+  - pause: 3
+  - fr: "avoir"
+  - pause: 1
+  - no: "Å gjøre."
+  - pause: 3
+  - fr: "faire"
+  - pause: 1
+  - no: "Ett år."
+  - pause: 3
+  - fr: "un an"
+  - pause: 1
+  - no: "Hvor, om sted."
+  - pause: 3
+  - fr: "où"
+  - pause: 1
+  - no: "Hva."
+  - pause: 3
+  - fr: "quoi"
+  - pause: 1
+  - no: "Student."
+  - pause: 3
+  - fr: "étudiant"
+  - pause: 1
+  - no: "Byen."
+  - pause: 3
+  - fr: "la ville"
+  - pause: 1
+  - no: "Nær."
+  - pause: 3
+  - fr: "près de"
+  - pause: 1
+  - no: "Også."
+  - pause: 3
+  - fr: "aussi"
+  - pause: 2
+  - no: "Det var uke tre. I helgen står du utenfor Vigelandsparken med Codex, som er Julie, en fransk turist fra Bordeaux. Instruksen står i episodebeskrivelsen. Spør hva hun jobber med, hvor hun bor, og hvor gammel hun er. Svar så selv: hva du jobber med og hvor du bor."
+  - no: "Hør episoden en gang til på neste løpetur. God tur videre."
+  - fr: "À la semaine prochaine !"

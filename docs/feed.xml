@@ -10,6 +10,43 @@
     <itunes:category text="Education" />
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Uke 03: Jobb, bosted og alder</title>
+      <description>Spørre turister hva de jobber med, hvor de bor og hvor gamle de er. Med verbene avoir og faire og hele presens av verb på -er.
+
+Gloser:
+- travailler: å jobbe
+- avoir: å ha
+- faire: å gjøre, å lage
+- un an: ett år (ans = år, om alder)
+- où: hvor (om sted)
+- quoi: hva
+- étudiant: student
+- la ville: byen
+- près de: nær, i nærheten av
+- aussi: også
+
+Fraser:
+- Vous faites quoi dans la vie ?: Hva jobber dere med?
+- Je travaille ici.: Jeg jobber her.
+- Je suis étudiant.: Jeg er student.
+- Vous habitez où ?: Hvor bor dere?
+- J'habite près de Paris.: Jeg bor nær Paris.
+- J'ai trente-cinq ans.: Jeg er 35 år.
+- Moi aussi, j'habite à Oslo.: Jeg bor også i Oslo.
+
+Helgesamtale med Codex. Lim inn dette:
+
+Du er Julie, en fransk turist fra Bordeaux som venter på trikken utenfor Vigelandsparken i Oslo. Du er 28 år og jobber som lærer. Jeg er nordmann og lærer fransk. Jeg har litt skolefransk og er på uke 3.
+Snakk bare fransk, sakte og med korte, enkle setninger. Hold deg så langt det går til disse ordene og frasene: travailler, avoir, faire, un an, où, quoi, étudiant, la ville, près de, aussi, Vous faites quoi dans la vie ?, Je travaille à…, Je suis étudiant, Vous habitez où ?, J'habite près de…, J'ai … ans, Moi aussi, og fra tidligere uker: bonjour, merci, Vous venez d'où ?, Je viens de…, J'habite à…, C'est la première fois que vous venez en Norvège ?, Vous êtes ici depuis combien de temps ?, Ça vous plaît, la Norvège ?, Vous pouvez parler plus lentement ?
+Etter hvert svar fra meg: hvis jeg sa noe feil, gi en kort rettelse på norsk i én setning, og fortsett så samtalen på fransk.
+Du starter samtalen. Etter rundt 10 minutter avslutter du og sier på norsk hvilke tre ting jeg bør øve mer på.</description>
+      <enclosure url="https://edvardunsvag.github.io/fransk-podkast/lyd/uke-03.mp3" length="12029429" type="audio/mpeg" />
+      <guid isPermaLink="false">https://edvardunsvag.github.io/fransk-podkast/lyd/uke-03.mp3</guid>
+      <pubDate>Sun, 18 Oct 2026 06:00:00 +0200</pubDate>
+      <itunes:duration>1504</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+    </item>
+    <item>
       <title>Uke 02: Er det første gang i Norge?</title>
       <description>Spørre turister om de har vært i Norge før, hvor lenge de blir, og om de liker seg. Med ord-for-ord-analyse og verbet être.
 
@@ -42,7 +79,7 @@ Etter hvert svar fra meg: hvis jeg sa noe feil, gi en kort rettelse på norsk i 
 Du starter samtalen. Etter rundt 10 minutter avslutter du og sier på norsk hvilke tre ting jeg bør øve mer på.</description>
       <enclosure url="https://edvardunsvag.github.io/fransk-podkast/lyd/uke-02.mp3" length="11328764" type="audio/mpeg" />
       <guid isPermaLink="false">https://edvardunsvag.github.io/fransk-podkast/lyd/uke-02.mp3</guid>
-      <pubDate>Sun, 04 Oct 2026 19:37:51 +0200</pubDate>
+      <pubDate>Sun, 11 Oct 2026 06:00:00 +0200</pubDate>
       <itunes:duration>1416</itunes:duration>
       <itunes:episode>2</itunes:episode>
     </item>
