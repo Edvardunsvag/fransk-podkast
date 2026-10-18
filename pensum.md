@@ -6,7 +6,7 @@ Kryss av når episoden er publisert. Hver uke har et samtaletema og ett grammati
 
 - [x] Uke 1: Hei, hvor kommer du fra? Hilse, presentere seg, be om saktere tale
 - [x] Uke 2: Er det første gang i Norge? Hvor lenge, liker dere dere. être, -er-verb i presens, depuis + presens
-- [ ] Uke 3: Jobb, bosted og alder. avoir (j'ai 35 ans), faire, hele presens av -er-verb
+- [x] Uke 3: Jobb, bosted og alder. avoir (j'ai 35 ans), faire, hele presens av -er-verb
 - [ ] Uke 4: Tall, klokka og dager. Tall til 100, il y a, quel/quelle
 - [ ] Uke 5: Hva har dere gjort i dag? Passé composé med avoir: j'ai visité, vous avez vu
 - [ ] Uke 6: Tips om Oslo. Je vous conseille de…, il faut, pouvoir/vouloir/devoir
