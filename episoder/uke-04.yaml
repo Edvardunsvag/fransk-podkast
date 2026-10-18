@@ -1,0 +1,614 @@
+uke: 4
+tittel: "Tall, klokka og dager"
+beskrivelse: "Tall fra 1 til 100, hva klokka er, ukedagene og hva som finnes i nærheten. Med quel/quelle og il y a."
+gloser:
+  - { fr: "quel", no: "hvilken, hvilket (quelle foran hunkjønn)" }
+  - { fr: "une heure", no: "en time, klokka" }
+  - { fr: "il y a", no: "det finnes, det er" }
+  - { fr: "aujourd'hui", no: "i dag" }
+  - { fr: "demain", no: "i morgen" }
+  - { fr: "samedi", no: "lørdag" }
+  - { fr: "midi", no: "klokka tolv, middag" }
+  - { fr: "maintenant", no: "nå" }
+  - { fr: "vingt", no: "tjue" }
+  - { fr: "cent", no: "hundre" }
+fraser:
+  - { fr: "Quelle heure est-il ?", no: "Hvor mye er klokka?" }
+  - { fr: "Il est trois heures et demie.", no: "Klokka er halv fire." }
+  - { fr: "Quel jour sommes-nous ?", no: "Hvilken dag er det?" }
+  - { fr: "Aujourd'hui, c'est samedi.", no: "I dag er det lørdag." }
+  - { fr: "Vous partez demain ?", no: "Drar dere i morgen?" }
+  - { fr: "Il y a un bus à huit heures.", no: "Det går en buss klokka åtte." }
+  - { fr: "Il est vingt heures maintenant.", no: "Klokka er tjue null null nå." }
+andre_ord:
+  - { fr: "un, deux, trois, quatre", no: "1, 2, 3, 4" }
+  - { fr: "six, sept, huit, neuf, dix", no: "6, 7, 8, 9, 10" }
+  - { fr: "onze, douze, treize, quatorze, quinze, seize", no: "11 til 16" }
+  - { fr: "dix-sept, dix-huit, dix-neuf", no: "17, 18, 19" }
+  - { fr: "quarante, cinquante, soixante", no: "40, 50, 60" }
+  - { fr: "soixante-dix", no: "70" }
+  - { fr: "quatre-vingts", no: "80" }
+  - { fr: "quatre-vingt-dix", no: "90" }
+  - { fr: "lundi, mardi, mercredi, jeudi, vendredi", no: "mandag til fredag" }
+  - { fr: "un jour", no: "en dag" }
+  - { fr: "l'âge", no: "alderen" }
+  - { fr: "et demie", no: "og en halv (tre og en halv = halv fire)" }
+  - { fr: "et quart", no: "og kvart (kvart over)" }
+  - { fr: "un café", no: "en kafé, en kaffe" }
+  - { fr: "un bus", no: "en buss" }
+  - { fr: "le centre", no: "sentrum" }
+  - { fr: "pour", no: "til, for" }
+  - { fr: "excusez-moi", no: "unnskyld" }
+  - { fr: "parfait", no: "perfekt, flott" }
+  - { fr: "partons", no: "vi drar (nous-form av partir)" }
+codex_instruks: |
+  Du er Marc, en fransk turist fra Toulouse som står på en busstasjon ved Oslo S og har det litt travelt. Du er i Norge til søndag og vil til sentrum. Jeg er nordmann og lærer fransk. Jeg har litt skolefransk og er på uke 4.
+  Snakk bare fransk, sakte og med korte, enkle setninger. Hold deg så langt det går til disse ordene og frasene: quel, une heure, il y a, aujourd'hui, demain, samedi, midi, maintenant, vingt, cent, tallene fra 1 til 100, ukedagene, Quelle heure est-il ?, Il est trois heures et demie, Quel jour sommes-nous ?, Aujourd'hui, c'est samedi, Il y a un bus à huit heures, og fra tidligere uker: bonjour, merci, Vous venez d'où ?, Vous restez jusqu'à quand ?, Vous habitez où ?, J'ai … ans, Vous pouvez parler plus lentement ?
+  Etter hvert svar fra meg: hvis jeg sa noe feil, gi en kort rettelse på norsk i én setning, og fortsett så samtalen på fransk.
+  Du starter samtalen. Etter rundt 10 minutter avslutter du og sier på norsk hvilke tre ting jeg bør øve mer på.
+segmenter:
+  # 1. Intro
+  - no: "Velkommen til uke fire av Fransk på løpetur."
+  - no: "I dag lærer du tallene fra én til hundre, hvordan du sier hva klokka er, ukedagene, og hvordan du sier at noe finnes i nærheten."
+  - no: "Etter episoden kan du svare en turist som spør om klokka eller om bussen."
+  - pause: 2
+
+  # 2. Repetisjon
+  - no: "Først en rask repetisjon. Du hører det norske ordet, og så det franske."
+  - no: "Å jobbe."
+  - pause: 3
+  - fr: "travailler"
+  - pause: 1
+  - no: "Siden, om tid."
+  - pause: 3
+  - fr: "depuis"
+  - pause: 1
+  - no: "Å ha."
+  - pause: 3
+  - fr: "avoir"
+  - pause: 1
+  - no: "Å bli værende."
+  - pause: 3
+  - fr: "rester"
+  - pause: 1
+  - no: "Å gjøre."
+  - pause: 3
+  - fr: "faire"
+  - pause: 1
+  - no: "En uke."
+  - pause: 3
+  - fr: "une semaine"
+  - pause: 1
+  - no: "Ett år."
+  - pause: 3
+  - fr: "un an"
+  - pause: 1
+  - no: "Frem til."
+  - pause: 3
+  - fr: "jusqu'à"
+  - pause: 2
+
+  # 3. Ukas 10 gloser
+  - no: "Så ukas ti ord. Ord nummer én."
+  - fr: "quel"
+  - pause: 2
+  - fr: "quel"
+  - pause: 2
+  - no: "Det betyr hvilken, eller hvilket. Foran et hunkjønnsord heter det"
+  - fr: "quelle"
+  - no: "men begge uttales helt likt."
+  - fr: "Quel âge avez-vous ?"
+  - pause: 3
+  - no: "Hvor gammel er dere? Ordrett: hvilken alder har dere?"
+  - fr: "âge"
+  - no: "betyr alder. Og"
+  - fr: "avez-vous"
+  - no: "er samme som"
+  - fr: "vous avez"
+  - no: "bare snudd om. Det er vanlig i spørsmål."
+  - pause: 1
+
+  - no: "Ord nummer to."
+  - fr: "une heure"
+  - pause: 2
+  - fr: "une heure"
+  - pause: 2
+  - no: "Det betyr en time. Men det brukes også om klokka."
+  - fr: "Il est deux heures."
+  - pause: 3
+  - no: "Klokka er to. Ordrett: den er to timer."
+  - fr: "il est"
+  - no: "betyr her det er, fra"
+  - fr: "être"
+  - no: "Og her er en overraskelse i uttalen. Mellom tallet og"
+  - fr: "heures"
+  - no: "kommer det en z-lyd:"
+  - fr: "deux heures"
+  - pause: 2
+  - fr: "trois heures"
+  - pause: 2
+  - fr: "dix heures"
+  - pause: 2
+
+  - no: "Ord nummer tre."
+  - fr: "il y a"
+  - pause: 2
+  - fr: "il y a"
+  - pause: 2
+  - no: "Det betyr det finnes, eller det er. Det er et av de mest nyttige uttrykkene på fransk."
+  - fr: "Il y a un café ici."
+  - pause: 3
+  - no: "Det er en kafé her."
+  - fr: "un café"
+  - no: "betyr en kafé, eller en kaffe. Og"
+  - fr: "ici"
+  - no: "kjenner du fra uke én. Uttrykket kan også bety for så lenge siden:"
+  - fr: "il y a trois jours"
+  - pause: 3
+  - no: "For tre dager siden."
+  - pause: 1
+
+  - no: "Ord nummer fire."
+  - fr: "aujourd'hui"
+  - pause: 2
+  - fr: "aujourd'hui"
+  - pause: 2
+  - no: "Det betyr i dag."
+  - fr: "Aujourd'hui, nous restons ici."
+  - pause: 3
+  - no: "I dag blir vi her. Alle de andre ordene kjenner du."
+  - pause: 1
+
+  - no: "Ord nummer fem."
+  - fr: "demain"
+  - pause: 2
+  - fr: "demain"
+  - pause: 2
+  - no: "Det betyr i morgen."
+  - fr: "Demain, je travaille."
+  - pause: 3
+  - no: "I morgen jobber jeg."
+  - pause: 1
+
+  - no: "Ord nummer seks."
+  - fr: "samedi"
+  - pause: 2
+  - fr: "samedi"
+  - pause: 2
+  - no: "Det betyr lørdag. Du kjenner søndag fra før. Her er hele uka. Mandag:"
+  - fr: "lundi"
+  - pause: 2
+  - no: "Tirsdag:"
+  - fr: "mardi"
+  - pause: 2
+  - no: "Onsdag:"
+  - fr: "mercredi"
+  - pause: 2
+  - no: "Torsdag:"
+  - fr: "jeudi"
+  - pause: 2
+  - no: "Fredag:"
+  - fr: "vendredi"
+  - pause: 2
+  - no: "Lørdag:"
+  - fr: "samedi"
+  - pause: 2
+  - no: "Søndag:"
+  - fr: "dimanche"
+  - pause: 2
+  - fr: "Samedi, nous partons."
+  - pause: 3
+  - no: "På lørdag drar vi. Ukedagen står alene, uten ord foran. Og"
+  - fr: "nous partons"
+  - no: "er vi-formen av"
+  - fr: "partir"
+  - no: "å dra."
+  - pause: 1
+
+  - no: "Ord nummer sju."
+  - fr: "midi"
+  - pause: 2
+  - fr: "midi"
+  - pause: 2
+  - no: "Det betyr klokka tolv på dagen, eller middag."
+  - fr: "Il est midi."
+  - pause: 3
+  - no: "Klokka er tolv."
+  - pause: 1
+
+  - no: "Ord nummer åtte."
+  - fr: "maintenant"
+  - pause: 2
+  - fr: "maintenant"
+  - pause: 2
+  - no: "Det betyr nå."
+  - fr: "Vous partez maintenant ?"
+  - pause: 3
+  - no: "Drar dere nå?"
+  - fr: "vous partez"
+  - no: "kjenner du fra uke to."
+  - pause: 1
+
+  - no: "Ord nummer ni og ti er tall. Vi tar alle tallene fra én til hundre. Først én til ti."
+  - fr: "un, deux, trois, quatre, cinq"
+  - pause: 3
+  - fr: "six, sept, huit, neuf, dix"
+  - pause: 3
+  - no: "Overraskelsen her er"
+  - fr: "sept"
+  - no: "som uttales uten p-en, nesten som sett."
+  - no: "Så elleve til seksten."
+  - fr: "onze, douze, treize"
+  - pause: 3
+  - fr: "quatorze, quinze, seize"
+  - pause: 3
+  - no: "Så sytten, atten og nitten. Fra nå av bygger franskmenn tallene: ti pluss sju, ti pluss åtte, ti pluss ni."
+  - fr: "dix-sept, dix-huit, dix-neuf"
+  - pause: 3
+  - no: "Ord nummer ni."
+  - fr: "vingt"
+  - pause: 2
+  - fr: "vingt"
+  - pause: 2
+  - no: "Det betyr tjue. Tjueen er"
+  - fr: "vingt et un"
+  - no: "med og i midten, bare for én. Resten bygges rett frem."
+  - fr: "vingt-deux, vingt-trois"
+  - pause: 3
+  - no: "Tjuetre kjenner du fra forrige uke. Så tiere."
+  - fr: "trente, quarante"
+  - pause: 3
+  - fr: "cinquante, soixante"
+  - pause: 3
+  - no: "Nå kommer det rare. Sytti er ikke sju ti. Franskmenn sier seksti pluss ti."
+  - fr: "soixante-dix"
+  - pause: 3
+  - no: "Åtti er fire ganger tjue."
+  - fr: "quatre-vingts"
+  - pause: 3
+  - no: "Og nitti er fire ganger tjue pluss ti."
+  - fr: "quatre-vingt-dix"
+  - pause: 3
+  - no: "Så mellom to tiere bygger du videre. Seksti og fem:"
+  - fr: "soixante-cinq"
+  - pause: 3
+  - no: "Syttitre:"
+  - fr: "soixante-treize"
+  - pause: 3
+  - no: "Åttito:"
+  - fr: "quatre-vingt-deux"
+  - pause: 3
+  - no: "Nittisju:"
+  - fr: "quatre-vingt-dix-sept"
+  - pause: 3
+  - no: "I Belgia og Sveits er det enklere. De sier"
+  - fr: "septante"
+  - no: "for sytti og"
+  - fr: "nonante"
+  - no: "for nitti."
+  - pause: 1
+  - no: "Ord nummer ti."
+  - fr: "cent"
+  - pause: 2
+  - fr: "cent"
+  - pause: 2
+  - no: "Det betyr hundre."
+  - pause: 1
+
+  - no: "Nå tester vi tallene. Du hører det norske tallet. Si det på fransk før svaret kommer."
+  - no: "Femten."
+  - pause: 4
+  - fr: "quinze"
+  - pause: 2
+  - no: "Tjueto."
+  - pause: 4
+  - fr: "vingt-deux"
+  - pause: 2
+  - no: "Førtini."
+  - pause: 4
+  - fr: "quarante-neuf"
+  - pause: 2
+  - no: "Seksti og fem."
+  - pause: 4
+  - fr: "soixante-cinq"
+  - pause: 2
+  - no: "Syttitre."
+  - pause: 4
+  - fr: "soixante-treize"
+  - pause: 2
+  - no: "Åttito."
+  - pause: 4
+  - fr: "quatre-vingt-deux"
+  - pause: 2
+  - no: "Nittisju."
+  - pause: 4
+  - fr: "quatre-vingt-dix-sept"
+  - pause: 2
+  - no: "Hundre."
+  - pause: 4
+  - fr: "cent"
+  - pause: 2
+
+  - no: "Det var ukas ti ord. En gang til, bare på fransk."
+  - fr: "quel"
+  - pause: 2
+  - fr: "une heure"
+  - pause: 2
+  - fr: "il y a"
+  - pause: 2
+  - fr: "aujourd'hui"
+  - pause: 2
+  - fr: "demain"
+  - pause: 2
+  - fr: "samedi"
+  - pause: 2
+  - fr: "midi"
+  - pause: 2
+  - fr: "maintenant"
+  - pause: 2
+  - fr: "vingt"
+  - pause: 2
+  - fr: "cent"
+  - pause: 2
+
+  # 4. Ukas fraser
+  - no: "Nå setter vi ordene sammen til setninger. Lange setninger bygger vi bakfra."
+  - pause: 1
+
+  - no: "Første setning. Hvor mye er klokka?"
+  - fr: "est-il ?"
+  - pause: 2
+  - fr: "heure est-il ?"
+  - pause: 2
+  - fr: "Quelle heure est-il ?"
+  - pause: 3
+  - no: "Ordrett: hvilken time er den? Rekkefølgen er snudd, som i"
+  - fr: "avez-vous"
+  - no: "Og"
+  - fr: "quelle"
+  - no: "er hunkjønn fordi"
+  - fr: "heure"
+  - no: "er et hunkjønnsord."
+  - fr: "Quelle heure est-il ?"
+  - pause: 3
+
+  - no: "Andre setning, svaret. Klokka er halv fire."
+  - fr: "trois heures"
+    stemme: b
+  - pause: 2
+  - fr: "trois heures et demie"
+    stemme: b
+  - pause: 2
+  - fr: "Il est trois heures et demie."
+    stemme: b
+  - pause: 3
+  - fr: "et demie"
+  - no: "betyr og en halv. Ordrett: tre timer og en halv, altså det vi kaller halv fire. Klokka kvart over tre er"
+  - fr: "trois heures et quart"
+  - pause: 3
+  - fr: "Il est trois heures et demie."
+    stemme: b
+  - pause: 3
+
+  - no: "Tredje setning. Hvilken dag er det?"
+  - fr: "sommes-nous ?"
+  - pause: 2
+  - fr: "jour sommes-nous ?"
+  - pause: 2
+  - fr: "Quel jour sommes-nous ?"
+  - pause: 3
+  - no: "Ordrett: hvilken dag er vi? Franskmenn sier vi er, om datoer og dager."
+  - fr: "jour"
+  - no: "betyr dag, og"
+  - fr: "sommes"
+  - no: "kjenner du fra"
+  - fr: "nous sommes"
+  - fr: "Quel jour sommes-nous ?"
+  - pause: 3
+
+  - no: "Fjerde setning, svaret. I dag er det lørdag."
+  - fr: "c'est samedi"
+    stemme: b
+  - pause: 2
+  - fr: "Aujourd'hui, c'est samedi."
+    stemme: b
+  - pause: 3
+  - no: "Alle ordene kjenner du nå."
+  - fr: "Aujourd'hui, c'est samedi."
+    stemme: b
+  - pause: 3
+
+  - no: "Femte setning. Drar dere i morgen?"
+  - fr: "demain ?"
+  - pause: 2
+  - fr: "Vous partez demain ?"
+  - pause: 3
+  - no: "Alle ordene kjenner du fra før, og du kan bytte ut dagen. For eksempel"
+  - fr: "Vous partez samedi ?"
+  - pause: 3
+  - no: "Drar dere på lørdag?"
+  - pause: 1
+
+  - no: "Sjette setning. Det går en buss klokka åtte."
+  - fr: "à huit heures"
+    stemme: b
+  - pause: 2
+  - fr: "un bus à huit heures"
+    stemme: b
+  - pause: 2
+  - fr: "Il y a un bus à huit heures."
+    stemme: b
+  - pause: 3
+  - fr: "un bus"
+  - no: "betyr en buss. Og"
+  - fr: "à"
+  - no: "betyr her klokka. Ordrett: det er en buss ved åtte timer."
+  - fr: "huit"
+  - no: "betyr åtte, med stum h."
+  - fr: "Il y a un bus à huit heures."
+    stemme: b
+  - pause: 3
+
+  - no: "Sjuende og siste setning. Klokka er tjue null null nå. Franskmenn bruker ofte tjuefire-timers klokke."
+  - fr: "vingt heures"
+    stemme: b
+  - pause: 2
+  - fr: "Il est vingt heures maintenant."
+    stemme: b
+  - pause: 3
+  - no: "Alle ordene kjenner du. På en togtavle står det tjue null null som"
+  - fr: "vingt heures"
+  - pause: 2
+
+  - no: "Nå tester vi setningene. Du hører den norske setningen. Prøv å si den på fransk før svaret kommer."
+  - no: "Hvor mye er klokka?"
+  - pause: 4
+  - fr: "Quelle heure est-il ?"
+  - pause: 2
+  - no: "Klokka er halv fire."
+  - pause: 4
+  - fr: "Il est trois heures et demie."
+  - pause: 2
+  - no: "Hvilken dag er det?"
+  - pause: 4
+  - fr: "Quel jour sommes-nous ?"
+  - pause: 2
+  - no: "I dag er det lørdag."
+  - pause: 4
+  - fr: "Aujourd'hui, c'est samedi."
+  - pause: 2
+  - no: "Drar dere i morgen?"
+  - pause: 4
+  - fr: "Vous partez demain ?"
+  - pause: 2
+  - no: "Det går en buss klokka åtte."
+  - pause: 4
+  - fr: "Il y a un bus à huit heures."
+  - pause: 2
+  - no: "Klokka er tjue null null nå."
+  - pause: 4
+  - fr: "Il est vingt heures maintenant."
+  - pause: 2
+
+  # 5. Dialog
+  - no: "Nå kommer en samtale. Edvard står på en busstasjon ved Oslo S. En fransk turist kommer bort til ham. Først sakte, med forklaringer på nye ord."
+  - pause: 1
+  - fr: "Excusez-moi ! Quelle heure est-il, s'il vous plaît ?"
+  - fr: "excusez-moi"
+  - no: "betyr unnskyld."
+  - fr: "Il est trois heures et demie."
+    stemme: b
+  - fr: "Merci ! Il y a un bus pour le centre ?"
+  - fr: "pour"
+  - no: "betyr til, eller for, og"
+  - fr: "le centre"
+  - no: "betyr sentrum."
+  - fr: "Oui, il y a un bus à quatre heures."
+    stemme: b
+  - fr: "Parfait ! Quel jour sommes-nous aujourd'hui ?"
+  - fr: "parfait"
+  - no: "betyr perfekt, eller flott."
+  - fr: "Aujourd'hui, c'est samedi."
+    stemme: b
+  - fr: "Ah, samedi ! Nous partons demain."
+  - fr: "Vous partez déjà ?"
+    stemme: b
+  - fr: "Oui, demain, à midi."
+  - fr: "Bon voyage, et bonne journée !"
+    stemme: b
+  - fr: "Merci, vous aussi !"
+  - pause: 2
+
+  - no: "Nå hele samtalen en gang til, i nesten normalt tempo, uten avbrudd."
+  - pause: 1
+  - fr: "Excusez-moi ! Quelle heure est-il, s'il vous plaît ?"
+    fart: normal
+  - fr: "Il est trois heures et demie."
+    stemme: b
+    fart: normal
+  - fr: "Merci ! Il y a un bus pour le centre ?"
+    fart: normal
+  - fr: "Oui, il y a un bus à quatre heures."
+    stemme: b
+    fart: normal
+  - fr: "Parfait ! Quel jour sommes-nous aujourd'hui ?"
+    fart: normal
+  - fr: "Aujourd'hui, c'est samedi."
+    stemme: b
+    fart: normal
+  - fr: "Ah, samedi ! Nous partons demain."
+    fart: normal
+  - fr: "Vous partez déjà ?"
+    stemme: b
+    fart: normal
+  - fr: "Oui, demain, à midi."
+    fart: normal
+  - fr: "Bon voyage, et bonne journée !"
+    stemme: b
+    fart: normal
+  - fr: "Merci, vous aussi !"
+    fart: normal
+  - pause: 2
+
+  - no: "Nå er det din tur. Du er Edvard. Du hører turistens replikker og får en pause til å svare."
+  - pause: 3
+  - fr: "Excusez-moi ! Quelle heure est-il, s'il vous plaît ?"
+  - pause: 5
+  - fr: "Merci ! Il y a un bus pour le centre ?"
+  - pause: 5
+  - fr: "Parfait ! Quel jour sommes-nous aujourd'hui ?"
+  - pause: 5
+  - fr: "Ah, samedi ! Nous partons demain."
+  - pause: 5
+  - fr: "Oui, demain, à midi."
+  - pause: 5
+  - fr: "Merci, vous aussi !"
+  - pause: 4
+  - no: "Bra. Det er denne samtalen du skal ha med Codex i helgen."
+  - pause: 2
+
+  # 6. Avslutning
+  - no: "Til slutt ukas ti ord. Du hører det norske. Prøv å komme på det franske før du hører det."
+  - no: "Hvilken."
+  - pause: 3
+  - fr: "quel"
+  - pause: 1
+  - no: "Klokka, en time."
+  - pause: 3
+  - fr: "une heure"
+  - pause: 1
+  - no: "Det finnes."
+  - pause: 3
+  - fr: "il y a"
+  - pause: 1
+  - no: "I dag."
+  - pause: 3
+  - fr: "aujourd'hui"
+  - pause: 1
+  - no: "I morgen."
+  - pause: 3
+  - fr: "demain"
+  - pause: 1
+  - no: "Lørdag."
+  - pause: 3
+  - fr: "samedi"
+  - pause: 1
+  - no: "Klokka tolv."
+  - pause: 3
+  - fr: "midi"
+  - pause: 1
+  - no: "Nå."
+  - pause: 3
+  - fr: "maintenant"
+  - pause: 1
+  - no: "Tjue."
+  - pause: 3
+  - fr: "vingt"
+  - pause: 1
+  - no: "Hundre."
+  - pause: 3
+  - fr: "cent"
+  - pause: 2
+  - no: "Det var uke fire. I helgen står du på en busstasjon ved Oslo S med Codex, som er Marc, en fransk turist fra Toulouse. Instruksen står i episodebeskrivelsen. La ham spørre om klokka, dagen og bussen. Si også tall høyt, for eksempel alderen din og telefonnummeret ditt."
+  - no: "Hør episoden en gang til på neste løpetur. God tur videre."
+  - fr: "À la semaine prochaine !"

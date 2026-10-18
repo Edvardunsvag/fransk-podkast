@@ -10,6 +10,43 @@
     <itunes:category text="Education" />
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Uke 04: Tall, klokka og dager</title>
+      <description>Tall fra 1 til 100, hva klokka er, ukedagene og hva som finnes i nærheten. Med quel/quelle og il y a.
+
+Gloser:
+- quel: hvilken, hvilket (quelle foran hunkjønn)
+- une heure: en time, klokka
+- il y a: det finnes, det er
+- aujourd'hui: i dag
+- demain: i morgen
+- samedi: lørdag
+- midi: klokka tolv, middag
+- maintenant: nå
+- vingt: tjue
+- cent: hundre
+
+Fraser:
+- Quelle heure est-il ?: Hvor mye er klokka?
+- Il est trois heures et demie.: Klokka er halv fire.
+- Quel jour sommes-nous ?: Hvilken dag er det?
+- Aujourd'hui, c'est samedi.: I dag er det lørdag.
+- Vous partez demain ?: Drar dere i morgen?
+- Il y a un bus à huit heures.: Det går en buss klokka åtte.
+- Il est vingt heures maintenant.: Klokka er tjue null null nå.
+
+Helgesamtale med Codex. Lim inn dette:
+
+Du er Marc, en fransk turist fra Toulouse som står på en busstasjon ved Oslo S og har det litt travelt. Du er i Norge til søndag og vil til sentrum. Jeg er nordmann og lærer fransk. Jeg har litt skolefransk og er på uke 4.
+Snakk bare fransk, sakte og med korte, enkle setninger. Hold deg så langt det går til disse ordene og frasene: quel, une heure, il y a, aujourd'hui, demain, samedi, midi, maintenant, vingt, cent, tallene fra 1 til 100, ukedagene, Quelle heure est-il ?, Il est trois heures et demie, Quel jour sommes-nous ?, Aujourd'hui, c'est samedi, Il y a un bus à huit heures, og fra tidligere uker: bonjour, merci, Vous venez d'où ?, Vous restez jusqu'à quand ?, Vous habitez où ?, J'ai … ans, Vous pouvez parler plus lentement ?
+Etter hvert svar fra meg: hvis jeg sa noe feil, gi en kort rettelse på norsk i én setning, og fortsett så samtalen på fransk.
+Du starter samtalen. Etter rundt 10 minutter avslutter du og sier på norsk hvilke tre ting jeg bør øve mer på.</description>
+      <enclosure url="https://edvardunsvag.github.io/fransk-podkast/lyd/uke-04.mp3" length="12586986" type="audio/mpeg" />
+      <guid isPermaLink="false">https://edvardunsvag.github.io/fransk-podkast/lyd/uke-04.mp3</guid>
+      <pubDate>Sun, 18 Oct 2026 19:27:56 +0200</pubDate>
+      <itunes:duration>1573</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+    </item>
+    <item>
       <title>Uke 03: Jobb, bosted og alder</title>
       <description>Spørre turister hva de jobber med, hvor de bor og hvor gamle de er. Med verbene avoir og faire og hele presens av verb på -er.
 
