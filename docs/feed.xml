@@ -10,6 +10,45 @@
     <itunes:category text="Education" />
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Uke 05: Hva har dere gjort i dag?</title>
+      <description>Fortid med passé composé: j'ai visité, vous avez vu, nous avons pris. Spør en turist hva de har gjort i dag og fortell hva du har gjort selv.
+
+Gloser:
+- visiter: å besøke, å se (et sted)
+- voir: å se (vu = sett)
+- manger: å spise
+- acheter: å kjøpe
+- marcher: å gå (til fots)
+- hier: i går
+- ce matin: i morges
+- un musée: et museum
+- le bateau: båten
+- fatigué: sliten
+
+Fraser:
+- Vous avez fait quoi aujourd'hui ?: Hva har dere gjort i dag?
+- J'ai visité un musée ce matin.: Jeg besøkte et museum i morges.
+- Vous avez vu l'Opéra ?: Har dere sett Operaen?
+- Nous avons pris le bateau.: Vi tok båten.
+- Hier, nous avons beaucoup marché.: I går gikk vi mye.
+- J'ai mangé du poisson.: Jeg spiste fisk.
+- Vous avez acheté quelque chose ?: Har dere kjøpt noe?
+- Vous êtes fatigués ?: Er dere slitne?
+
+Helgesamtale med Codex. Lim inn dette:
+
+Du er Claire, en fransk turist fra Lyon som sitter på en benk på Aker Brygge sent på ettermiddagen. Du har vært i Oslo i tre dager med mannen din, og i dag har dere vært på Munchmuseet, tatt båten til Bygdøy og gått mye. Jeg er nordmann og lærer fransk. Jeg har litt skolefransk og er på uke 5.
+Snakk bare fransk, sakte og med korte, enkle setninger. Hold deg så langt det går til disse ordene og frasene: visiter, voir, manger, acheter, marcher, hier, ce matin, un musée, le bateau, fatigué, Vous avez fait quoi aujourd'hui ?, J'ai visité un musée ce matin, Vous avez vu l'Opéra ?, Nous avons pris le bateau, Hier, nous avons beaucoup marché, J'ai mangé du poisson, Vous avez acheté quelque chose ?, Vous êtes fatigués ?, og fra tidligere uker: Vous venez d'où ?, C'est la première fois en Norvège ?, Vous restez jusqu'à quand ?, Ça vous plaît ?, Vous habitez où ?, Quelle heure est-il ?, il y a, aujourd'hui, demain, Vous pouvez parler plus lentement ?
+Spør meg også hva jeg har gjort i dag og i går, slik at jeg må bruke j'ai + perfektum partisipp selv.
+Etter hvert svar fra meg: hvis jeg sa noe feil, gi en kort rettelse på norsk i én setning, og fortsett så samtalen på fransk.
+Du starter samtalen. Etter rundt 10 minutter avslutter du og sier på norsk hvilke tre ting jeg bør øve mer på.</description>
+      <enclosure url="https://edvardunsvag.github.io/fransk-podkast/lyd/uke-05.mp3" length="10567412" type="audio/mpeg" />
+      <guid isPermaLink="false">https://edvardunsvag.github.io/fransk-podkast/lyd/uke-05.mp3</guid>
+      <pubDate>Sat, 24 Oct 2026 14:55:24 +0200</pubDate>
+      <itunes:duration>1321</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+    </item>
+    <item>
       <title>Uke 04: Tall, klokka og dager</title>
       <description>Tall fra 1 til 100, hva klokka er, ukedagene og hva som finnes i nærheten. Med quel/quelle og il y a.
 
@@ -42,7 +81,7 @@ Etter hvert svar fra meg: hvis jeg sa noe feil, gi en kort rettelse på norsk i 
 Du starter samtalen. Etter rundt 10 minutter avslutter du og sier på norsk hvilke tre ting jeg bør øve mer på.</description>
       <enclosure url="https://edvardunsvag.github.io/fransk-podkast/lyd/uke-04.mp3" length="12586986" type="audio/mpeg" />
       <guid isPermaLink="false">https://edvardunsvag.github.io/fransk-podkast/lyd/uke-04.mp3</guid>
-      <pubDate>Sun, 18 Oct 2026 19:27:56 +0200</pubDate>
+      <pubDate>Sat, 24 Oct 2026 14:55:24 +0200</pubDate>
       <itunes:duration>1573</itunes:duration>
       <itunes:episode>4</itunes:episode>
     </item>

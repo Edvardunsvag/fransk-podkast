@@ -1,0 +1,509 @@
+uke: 5
+tittel: "Hva har dere gjort i dag?"
+beskrivelse: "Fortid med passé composé: j'ai visité, vous avez vu, nous avons pris. Spør en turist hva de har gjort i dag og fortell hva du har gjort selv."
+gloser:
+  - { fr: "visiter", no: "å besøke, å se (et sted)" }
+  - { fr: "voir", no: "å se (vu = sett)" }
+  - { fr: "manger", no: "å spise" }
+  - { fr: "acheter", no: "å kjøpe" }
+  - { fr: "marcher", no: "å gå (til fots)" }
+  - { fr: "hier", no: "i går" }
+  - { fr: "ce matin", no: "i morges" }
+  - { fr: "un musée", no: "et museum" }
+  - { fr: "le bateau", no: "båten" }
+  - { fr: "fatigué", no: "sliten" }
+fraser:
+  - { fr: "Vous avez fait quoi aujourd'hui ?", no: "Hva har dere gjort i dag?" }
+  - { fr: "J'ai visité un musée ce matin.", no: "Jeg besøkte et museum i morges." }
+  - { fr: "Vous avez vu l'Opéra ?", no: "Har dere sett Operaen?" }
+  - { fr: "Nous avons pris le bateau.", no: "Vi tok båten." }
+  - { fr: "Hier, nous avons beaucoup marché.", no: "I går gikk vi mye." }
+  - { fr: "J'ai mangé du poisson.", no: "Jeg spiste fisk." }
+  - { fr: "Vous avez acheté quelque chose ?", no: "Har dere kjøpt noe?" }
+  - { fr: "Vous êtes fatigués ?", no: "Er dere slitne?" }
+andre_ord:
+  - { fr: "le passé composé", no: "fortid med avoir + perfektum partisipp" }
+  - { fr: "nous avons", no: "vi har (nous-form av avoir)" }
+  - { fr: "il a, elle a", no: "han har, hun har" }
+  - { fr: "visité", no: "besøkt (av visiter)" }
+  - { fr: "vu", no: "sett (av voir)" }
+  - { fr: "fait", no: "gjort (av faire)" }
+  - { fr: "pris", no: "tatt (av prendre)" }
+  - { fr: "le musée Munch", no: "Munchmuseet" }
+  - { fr: "l'Opéra", no: "Operaen" }
+  - { fr: "le poisson", no: "fisken" }
+  - { fr: "du", no: "litt, noe (du poisson = fisk)" }
+  - { fr: "quelque chose", no: "noe" }
+  - { fr: "un pull", no: "en genser" }
+  - { fr: "bon", no: "god, godt" }
+  - { fr: "le matin", no: "morgenen" }
+codex_instruks: |
+  Du er Claire, en fransk turist fra Lyon som sitter på en benk på Aker Brygge sent på ettermiddagen. Du har vært i Oslo i tre dager med mannen din, og i dag har dere vært på Munchmuseet, tatt båten til Bygdøy og gått mye. Jeg er nordmann og lærer fransk. Jeg har litt skolefransk og er på uke 5.
+  Snakk bare fransk, sakte og med korte, enkle setninger. Hold deg så langt det går til disse ordene og frasene: visiter, voir, manger, acheter, marcher, hier, ce matin, un musée, le bateau, fatigué, Vous avez fait quoi aujourd'hui ?, J'ai visité un musée ce matin, Vous avez vu l'Opéra ?, Nous avons pris le bateau, Hier, nous avons beaucoup marché, J'ai mangé du poisson, Vous avez acheté quelque chose ?, Vous êtes fatigués ?, og fra tidligere uker: Vous venez d'où ?, C'est la première fois en Norvège ?, Vous restez jusqu'à quand ?, Ça vous plaît ?, Vous habitez où ?, Quelle heure est-il ?, il y a, aujourd'hui, demain, Vous pouvez parler plus lentement ?
+  Spør meg også hva jeg har gjort i dag og i går, slik at jeg må bruke j'ai + perfektum partisipp selv.
+  Etter hvert svar fra meg: hvis jeg sa noe feil, gi en kort rettelse på norsk i én setning, og fortsett så samtalen på fransk.
+  Du starter samtalen. Etter rundt 10 minutter avslutter du og sier på norsk hvilke tre ting jeg bør øve mer på.
+segmenter:
+  # 1. Intro
+  - no: "Velkommen til uke fem av Fransk på løpetur."
+  - no: "I dag lærer du å snakke om fortid. Hva har dere gjort i dag? Jeg har besøkt et museum. Vi tok båten."
+  - no: "Etter episoden kan du spørre en turist hva de har gjort i dag, og fortelle hva du har gjort selv."
+  - pause: 2
+
+  # 2. Repetisjon
+  - no: "Først en rask repetisjon. Du hører det norske ordet, og så det franske."
+  - no: "Hvilken."
+  - pause: 3
+  - fr: "quel"
+  - pause: 1
+  - no: "Å gjøre."
+  - pause: 3
+  - fr: "faire"
+  - pause: 1
+  - no: "Fransk."
+  - pause: 3
+  - fr: "français"
+  - pause: 1
+  - no: "Klokka, en time."
+  - pause: 3
+  - fr: "une heure"
+  - pause: 1
+  - no: "Ett år."
+  - pause: 3
+  - fr: "un an"
+  - pause: 1
+  - no: "Norge."
+  - pause: 3
+  - fr: "la Norvège"
+  - pause: 1
+  - no: "Det finnes."
+  - pause: 3
+  - fr: "il y a"
+  - pause: 1
+  - no: "Hvor."
+  - pause: 3
+  - fr: "où"
+  - pause: 2
+
+  # 3. Ukas 10 gloser
+  - no: "Før ukas ord, ukas grammatikk. Den kalles"
+  - fr: "le passé composé"
+  - no: "og det er den vanligste måten å snakke om fortid på. Den er bygd akkurat som norsk har gjort: en form av å ha, pluss verbet."
+  - no: "Jeg har:"
+  - fr: "j'ai"
+  - pause: 2
+  - no: "Dere har:"
+  - fr: "vous avez"
+  - pause: 2
+  - no: "Vi har:"
+  - fr: "nous avons"
+  - pause: 2
+  - no: "Han har, og hun har:"
+  - fr: "il a, elle a"
+  - pause: 2
+  - no: "Så kommer verbet. For verb som slutter på e r, bytter du ut slutten med en é-lyd. Lyden er den samme som i grunnformen, så du hører nesten ingen forskjell."
+  - pause: 1
+
+  - no: "Ord nummer én."
+  - fr: "visiter"
+  - pause: 2
+  - fr: "visiter"
+  - pause: 2
+  - no: "Det betyr å besøke, eller å se på et sted. Det brukes om steder, ikke om personer. Jeg har besøkt:"
+  - fr: "j'ai visité"
+  - pause: 3
+  - fr: "J'ai visité Oslo."
+  - pause: 3
+  - no: "Jeg har besøkt Oslo. På norsk sier vi ofte bare jeg besøkte. På fransk bruker du likevel denne formen."
+  - pause: 1
+
+  - no: "Ord nummer to."
+  - fr: "voir"
+  - pause: 2
+  - fr: "voir"
+  - pause: 2
+  - no: "Det betyr å se. Dette verbet følger ikke regelen. Sett heter"
+  - fr: "vu"
+  - pause: 2
+  - fr: "Vous avez vu la vue ?"
+  - pause: 3
+  - no: "Har dere sett utsikten?"
+  - fr: "la vue"
+  - no: "kjenner du fra uke to. Spørsmålet er bare en vanlig setning med spørretone."
+  - pause: 1
+
+  - no: "Ord nummer tre."
+  - fr: "manger"
+  - pause: 2
+  - fr: "manger"
+  - pause: 2
+  - no: "Det betyr å spise. Spist heter"
+  - fr: "mangé"
+  - pause: 2
+  - fr: "Nous avons mangé ici."
+  - pause: 3
+  - no: "Vi har spist her."
+  - fr: "nous avons"
+  - no: "er vi har, fra"
+  - fr: "avoir"
+  - pause: 1
+
+  - no: "Ord nummer fire."
+  - fr: "acheter"
+  - pause: 2
+  - fr: "acheter"
+  - pause: 2
+  - no: "Det betyr å kjøpe. Kjøpt heter"
+  - fr: "acheté"
+  - pause: 2
+  - fr: "J'ai acheté un pull."
+  - pause: 3
+  - no: "Jeg har kjøpt en genser."
+  - fr: "un pull"
+  - no: "betyr en genser. Turister i Norge kjøper ofte en."
+  - pause: 1
+
+  - no: "Ord nummer fem."
+  - fr: "marcher"
+  - pause: 2
+  - fr: "marcher"
+  - pause: 2
+  - no: "Det betyr å gå til fots. Gått heter"
+  - fr: "marché"
+  - pause: 2
+  - fr: "Il a beaucoup marché."
+  - pause: 3
+  - no: "Han har gått mye."
+  - fr: "beaucoup"
+  - no: "kjenner du fra uke én. Det står mellom"
+  - fr: "a"
+  - no: "og"
+  - fr: "marché"
+  - no: "akkurat som på norsk."
+  - pause: 1
+
+  - no: "Ord nummer seks."
+  - fr: "hier"
+  - pause: 2
+  - fr: "hier"
+  - pause: 2
+  - no: "Det betyr i går. Uttalen er overraskende: h-en er stum, så det høres ut som i-jær."
+  - fr: "Hier, j'ai travaillé."
+  - pause: 3
+  - no: "I går jobbet jeg."
+  - fr: "travaillé"
+  - no: "kommer av"
+  - fr: "travailler"
+  - no: "å jobbe, som du kjenner."
+  - pause: 1
+
+  - no: "Ord nummer sju."
+  - fr: "ce matin"
+  - pause: 2
+  - fr: "ce matin"
+  - pause: 2
+  - no: "Det betyr i morges. Ordrett: denne morgenen."
+  - fr: "le matin"
+  - no: "er morgenen."
+  - fr: "Ce matin, j'ai mangé à sept heures."
+  - pause: 3
+  - no: "I morges spiste jeg klokka sju."
+  - pause: 1
+
+  - no: "Ord nummer åtte."
+  - fr: "un musée"
+  - pause: 2
+  - fr: "un musée"
+  - pause: 2
+  - no: "Det betyr et museum. Pass på at det er hankjønn, selv om det slutter på e."
+  - fr: "Il y a un musée près d'ici."
+  - pause: 3
+  - no: "Det er et museum i nærheten. Alle ordene kjenner du. Og Munchmuseet heter"
+  - fr: "le musée Munch"
+  - pause: 1
+
+  - no: "Ord nummer ni."
+  - fr: "le bateau"
+  - pause: 2
+  - fr: "le bateau"
+  - pause: 2
+  - no: "Det betyr båten. E a u uttales som o."
+  - fr: "Le bateau part à midi."
+  - pause: 3
+  - no: "Båten går klokka tolv."
+  - fr: "part"
+  - no: "kommer av"
+  - fr: "partir"
+  - no: "å dra, her i den- eller han-form."
+  - pause: 1
+
+  - no: "Ord nummer ti."
+  - fr: "fatigué"
+  - pause: 2
+  - fr: "fatigué"
+  - pause: 2
+  - no: "Det betyr sliten. Det brukes med å være, ikke å ha."
+  - fr: "Je suis fatigué."
+  - pause: 3
+  - no: "Jeg er sliten. Fra"
+  - fr: "être"
+  - no: "som du kjenner."
+  - pause: 2
+
+  # 4. Ukas fraser
+  - no: "Så ukas setninger. Første setning. Hva har dere gjort i dag?"
+  - fr: "aujourd'hui"
+  - pause: 2
+  - fr: "fait quoi aujourd'hui"
+  - pause: 2
+  - fr: "Vous avez fait quoi aujourd'hui ?"
+  - pause: 3
+  - fr: "fait"
+  - no: "kommer av"
+  - fr: "faire"
+  - no: "å gjøre. Gjort heter altså"
+  - fr: "fait"
+  - no: "og t-en er stum."
+  - fr: "quoi"
+  - no: "betyr hva, og står sist i muntlig fransk."
+  - fr: "Vous avez fait quoi aujourd'hui ?"
+  - pause: 3
+
+  - no: "Andre setning. Jeg besøkte et museum i morges."
+  - fr: "ce matin"
+  - pause: 2
+  - fr: "un musée ce matin"
+  - pause: 2
+  - fr: "J'ai visité un musée ce matin."
+  - pause: 3
+  - no: "Alle ordene er ukas ord. Tidsuttrykket kan også stå først:"
+  - fr: "Ce matin, j'ai visité un musée."
+  - pause: 3
+
+  - no: "Tredje setning. Har dere sett Operaen?"
+  - fr: "l'Opéra"
+  - pause: 2
+  - fr: "Vous avez vu l'Opéra ?"
+  - pause: 3
+  - fr: "vu"
+  - no: "er sett, fra"
+  - fr: "voir"
+  - no: "Og"
+  - fr: "l'Opéra"
+  - no: "er Operaen. Le blir til l foran vokal."
+  - fr: "Vous avez vu l'Opéra ?"
+  - pause: 3
+
+  - no: "Fjerde setning. Vi tok båten."
+  - fr: "le bateau"
+  - pause: 2
+  - fr: "Nous avons pris le bateau."
+  - pause: 3
+  - fr: "pris"
+  - no: "kommer av"
+  - fr: "prendre"
+  - no: "å ta, som du kjenner fra uke to. Tatt heter"
+  - fr: "pris"
+  - no: "og s-en er stum."
+  - fr: "Nous avons pris le bateau."
+  - pause: 3
+
+  - no: "Femte setning. I går gikk vi mye."
+  - fr: "beaucoup marché"
+  - pause: 2
+  - fr: "nous avons beaucoup marché"
+  - pause: 2
+  - fr: "Hier, nous avons beaucoup marché."
+  - pause: 3
+  - no: "Alle ordene kjenner du nå."
+  - pause: 1
+
+  - no: "Sjette setning. Jeg spiste fisk."
+  - fr: "du poisson"
+  - pause: 2
+  - fr: "J'ai mangé du poisson."
+  - pause: 3
+  - fr: "le poisson"
+  - no: "betyr fisken. Når du spiser noe av noe, sier franskmenn"
+  - fr: "du"
+  - no: "foran. Ordrett: jeg har spist av fisken."
+  - fr: "J'ai mangé du poisson."
+  - pause: 3
+
+  - no: "Sjuende setning. Har dere kjøpt noe?"
+  - fr: "quelque chose"
+  - pause: 2
+  - fr: "acheté quelque chose"
+  - pause: 2
+  - fr: "Vous avez acheté quelque chose ?"
+  - pause: 3
+  - fr: "quelque chose"
+  - no: "betyr noe. Ordrett: en eller annen ting."
+  - pause: 1
+
+  - no: "Åttende og siste setning. Er dere slitne?"
+  - fr: "Vous êtes fatigués ?"
+  - pause: 3
+  - fr: "vous êtes"
+  - no: "er dere er, fra"
+  - fr: "être"
+  - no: "Når du snakker til flere, får"
+  - fr: "fatigués"
+  - no: "en s på slutten. Den høres ikke."
+  - pause: 1
+
+  - no: "Nå tester vi setningene. Du hører den norske setningen. Prøv å si den på fransk før svaret kommer."
+  - no: "Hva har dere gjort i dag?"
+  - pause: 4
+  - fr: "Vous avez fait quoi aujourd'hui ?"
+  - pause: 2
+  - no: "Jeg besøkte et museum i morges."
+  - pause: 4
+  - fr: "J'ai visité un musée ce matin."
+  - pause: 2
+  - no: "Har dere sett Operaen?"
+  - pause: 4
+  - fr: "Vous avez vu l'Opéra ?"
+  - pause: 2
+  - no: "Vi tok båten."
+  - pause: 4
+  - fr: "Nous avons pris le bateau."
+  - pause: 2
+  - no: "I går gikk vi mye."
+  - pause: 4
+  - fr: "Hier, nous avons beaucoup marché."
+  - pause: 2
+  - no: "Jeg spiste fisk."
+  - pause: 4
+  - fr: "J'ai mangé du poisson."
+  - pause: 2
+  - no: "Har dere kjøpt noe?"
+  - pause: 4
+  - fr: "Vous avez acheté quelque chose ?"
+  - pause: 2
+  - no: "Er dere slitne?"
+  - pause: 4
+  - fr: "Vous êtes fatigués ?"
+  - pause: 2
+
+  # 5. Dialog
+  - no: "Nå kommer en samtale. Edvard sitter på en benk på Aker Brygge. En fransk turist setter seg ved siden av ham. Først sakte, med forklaringer på nye ord."
+  - pause: 1
+  - fr: "Bonjour ! C'est magnifique ici !"
+  - fr: "Oui, très beau. Vous avez fait quoi aujourd'hui ?"
+    stemme: b
+  - fr: "Ce matin, nous avons visité un musée."
+  - fr: "Quel musée ?"
+    stemme: b
+  - fr: "Le musée Munch. Et nous avons pris le bateau."
+  - fr: "Vous avez vu l'Opéra ?"
+    stemme: b
+  - fr: "Oui, hier. Nous avons beaucoup marché !"
+  - fr: "Vous êtes fatigués ?"
+    stemme: b
+  - fr: "Un peu ! Vous avez mangé ici ?"
+  - fr: "Oui, j'ai mangé du poisson. C'est très bon."
+    stemme: b
+  - fr: "bon"
+  - no: "betyr godt."
+  - fr: "Merci ! Bonne journée !"
+  - fr: "Merci, vous aussi !"
+    stemme: b
+  - pause: 2
+
+  - no: "Nå hele samtalen en gang til, i nesten normalt tempo, uten avbrudd."
+  - pause: 1
+  - fr: "Bonjour ! C'est magnifique ici !"
+    fart: normal
+  - fr: "Oui, très beau. Vous avez fait quoi aujourd'hui ?"
+    stemme: b
+    fart: normal
+  - fr: "Ce matin, nous avons visité un musée."
+    fart: normal
+  - fr: "Quel musée ?"
+    stemme: b
+    fart: normal
+  - fr: "Le musée Munch. Et nous avons pris le bateau."
+    fart: normal
+  - fr: "Vous avez vu l'Opéra ?"
+    stemme: b
+    fart: normal
+  - fr: "Oui, hier. Nous avons beaucoup marché !"
+    fart: normal
+  - fr: "Vous êtes fatigués ?"
+    stemme: b
+    fart: normal
+  - fr: "Un peu ! Vous avez mangé ici ?"
+    fart: normal
+  - fr: "Oui, j'ai mangé du poisson. C'est très bon."
+    stemme: b
+    fart: normal
+  - fr: "Merci ! Bonne journée !"
+    fart: normal
+  - fr: "Merci, vous aussi !"
+    stemme: b
+    fart: normal
+  - pause: 2
+
+  - no: "Nå er det din tur. Du er Edvard. Du hører turistens replikker og får en pause til å svare."
+  - pause: 3
+  - fr: "Bonjour ! C'est magnifique ici !"
+  - pause: 5
+  - fr: "Ce matin, nous avons visité un musée."
+  - pause: 5
+  - fr: "Le musée Munch. Et nous avons pris le bateau."
+  - pause: 5
+  - fr: "Oui, hier. Nous avons beaucoup marché !"
+  - pause: 5
+  - fr: "Un peu ! Vous avez mangé ici ?"
+  - pause: 5
+  - fr: "Merci ! Bonne journée !"
+  - pause: 4
+  - no: "Bra. Prøv også å svare med det du selv har gjort i dag. Det er denne samtalen du skal ha med Codex i helgen."
+  - pause: 2
+
+  # 6. Avslutning
+  - no: "Til slutt ukas ti ord. Du hører det norske. Prøv å komme på det franske før du hører det."
+  - no: "Å besøke et sted."
+  - pause: 3
+  - fr: "visiter"
+  - pause: 1
+  - no: "Å se."
+  - pause: 3
+  - fr: "voir"
+  - pause: 1
+  - no: "Å spise."
+  - pause: 3
+  - fr: "manger"
+  - pause: 1
+  - no: "Å kjøpe."
+  - pause: 3
+  - fr: "acheter"
+  - pause: 1
+  - no: "Å gå til fots."
+  - pause: 3
+  - fr: "marcher"
+  - pause: 1
+  - no: "I går."
+  - pause: 3
+  - fr: "hier"
+  - pause: 1
+  - no: "I morges."
+  - pause: 3
+  - fr: "ce matin"
+  - pause: 1
+  - no: "Et museum."
+  - pause: 3
+  - fr: "un musée"
+  - pause: 1
+  - no: "Båten."
+  - pause: 3
+  - fr: "le bateau"
+  - pause: 1
+  - no: "Sliten."
+  - pause: 3
+  - fr: "fatigué"
+  - pause: 2
+  - no: "Det var uke fem. I helgen sitter du på en benk på Aker Brygge med Codex, som er Claire, en fransk turist fra Lyon. Instruksen står i episodebeskrivelsen. Spør hva hun har gjort i dag og i går, og fortell hva du selv har gjort. Bruk j'ai pluss verbet."
+  - no: "Hør episoden en gang til på neste løpetur. God tur videre."
+  - fr: "À la semaine prochaine !"
